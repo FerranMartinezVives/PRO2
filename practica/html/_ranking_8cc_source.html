@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pràctica de PRO2 Primavera 2022. Circuito de torneos de tenis: Fitxer de Codi Ranking.cc</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Pràctica de PRO2 Primavera 2022. Circuito de torneos de tenis
+   &#160;<span id="projectnumber">v7.0 13-11-2017</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generat per Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Ranking.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_ranking_8cc.html">Veure la documentació d'aquest fitxer.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="_ranking_8hh.html">Ranking.hh</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_ranking.html#a7b1142b455d06f3d455d796ed329118f">    7</a></span>&#160;<a class="code" href="class_ranking.html#a7b1142b455d06f3d455d796ed329118f">Ranking::Ranking</a>() {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  llista = map&lt;string, Jugador&gt;();</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  ranking = vector&lt; map&lt;string, Jugador&gt;::iterator &gt;(0);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_ranking.html#a1639f112b48967caf38e1ab4be57b203">   12</a></span>&#160;<a class="code" href="class_ranking.html#a7b1142b455d06f3d455d796ed329118f">Ranking::Ranking</a>(<span class="keywordtype">int</span> num_jgds) {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  llista = map&lt;string, Jugador&gt;();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  ranking = vector&lt; map&lt;string, Jugador&gt;::iterator &gt;(0);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_jgds; ++i) {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">string</span> n;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    cin &gt;&gt; n;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_jugador.html">Jugador</a> j(n);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    pair&lt; map&lt;string, Jugador&gt;::iterator, <span class="keywordtype">bool</span> &gt; p;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    p = llista.insert(make_pair(n, j));</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    ranking.push_back(p.first);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_ranking.html#aa350c65acea82ec0ac42ec80db8bc00f">   25</a></span>&#160;<a class="code" href="class_ranking.html#aa350c65acea82ec0ac42ec80db8bc00f">Ranking::~Ranking</a>() {}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_ranking.html#a5fb3646eb86e5d01b1f61266e9bbe8c6">   27</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_ranking.html#a5fb3646eb86e5d01b1f61266e9bbe8c6">Ranking::alta_jugador</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; p) {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  map&lt;string, Jugador&gt;::iterator it = llista.find(p);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordflow">if</span> (it != llista.end()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="class_jugador.html">Jugador</a> j(p);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  pair&lt; map&lt;string, Jugador&gt;::iterator, <span class="keywordtype">bool</span> &gt; pair;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  pair = llista.insert(make_pair(p, j));</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  ranking.push_back(pair.first);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_ranking.html#ab63d27dc5a053748c2f39678d4a619c0">   37</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_ranking.html#ab63d27dc5a053748c2f39678d4a619c0">Ranking::baixa_jugador</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; j) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  map&lt;string, Jugador&gt;::iterator it = llista.find(j);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordflow">if</span> (it == llista.end()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">bool</span> found = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">int</span> i = 0;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordflow">while</span> (not found and i &lt; ranking.size()) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">if</span> (ranking[i] == it) found = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">else</span> ++i;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordflow">while</span> (i &lt; ranking.size() - 1) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    map&lt;string, Jugador&gt;::iterator aux = ranking[i];</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    ranking[i] = ranking[i + 1];</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    ranking[i + 1] = aux;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    ++i;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  ranking.pop_back();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  llista.erase(it);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_ranking.html#ab00377801bf2969af81146c2a050f6fb">   57</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_ranking.html#ab00377801bf2969af81146c2a050f6fb">Ranking::ordenar_ranking</a>() {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  stable_sort(ranking.begin(), ranking.end(), ordre_ranking);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_ranking.html#a3cafaca9c780db230bf52f87c89c4722">   61</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_ranking.html#a3cafaca9c780db230bf52f87c89c4722">Ranking::actualitzar_partits</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; j, <span class="keyword">const</span> pair&lt;int, int&gt;&amp; partits) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  map&lt;string, Jugador&gt;::iterator it = llista.find(j);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  it-&gt;second.augmentar_partits(partits);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_ranking.html#a8ae92fc20d1284ed16b8b0f64ec9cc62">   66</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_ranking.html#a8ae92fc20d1284ed16b8b0f64ec9cc62">Ranking::actualitzar_sets</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; j, <span class="keyword">const</span> pair&lt;int, int&gt;&amp; sets) {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  map&lt;string, Jugador&gt;::iterator it = llista.find(j);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  it-&gt;second.augmentar_sets(sets);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_ranking.html#a7dce29cb261b844884eb41fc4e68556b">   71</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_ranking.html#a7dce29cb261b844884eb41fc4e68556b">Ranking::actualitzar_jocs</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; j, <span class="keyword">const</span> pair&lt;int, int&gt;&amp; jocs) {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  map&lt;string, Jugador&gt;::iterator it = llista.find(j);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  it-&gt;second.augmentar_jocs(jocs);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_ranking.html#a0655d4f2b9e8db5c2c5bd74197ed5b30">   76</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_ranking.html#a0655d4f2b9e8db5c2c5bd74197ed5b30">Ranking::actualitzar_punts</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; j, <span class="keywordtype">int</span> x) {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  map&lt;string, Jugador&gt;::iterator it = llista.find(j);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordflow">if</span> (it != llista.end()) it-&gt;second.modificar_puntuacio(x);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="class_ranking.html#a1301d78fa35b7a57c10f890be6a5e724">   81</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_ranking.html#a1301d78fa35b7a57c10f890be6a5e724">Ranking::actualitzar_tornejos</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; j, <span class="keywordtype">int</span> x) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  map&lt;string, Jugador&gt;::iterator it = llista.find(j);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordflow">if</span> (it != llista.end()) it-&gt;second.augmentar_tornejos(x);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="class_ranking.html#ab8432ae2eecb7bbb653a94bbe964d32c">   86</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_ranking.html#ab8432ae2eecb7bbb653a94bbe964d32c">Ranking::mida</a>() {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordflow">return</span> llista.size();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="class_ranking.html#a43fcf8beb2a3f1c1714e1ffbf61135e4">   90</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="class_ranking.html#a43fcf8beb2a3f1c1714e1ffbf61135e4">Ranking::buscar_posicio</a>(<span class="keywordtype">int</span> x) {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordflow">return</span> ranking[x - 1]-&gt;first;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="class_ranking.html#a7f68c4f16408337d955063e16d4c18f8">   94</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_ranking.html#a7f68c4f16408337d955063e16d4c18f8">Ranking::imprimeix_ranking</a>() {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; ranking.size(); ++i) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    cout &lt;&lt; i + 1 &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; ranking[i]-&gt;first &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    cout &lt;&lt; ranking[i]-&gt;second.consultar_puntuacio() &lt;&lt; endl;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="class_ranking.html#a9bf1ea8615dedd1cfa9ab820454df01d">  101</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_ranking.html#a9bf1ea8615dedd1cfa9ab820454df01d">Ranking::imprimeix_jugadors</a>() {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  map&lt;string, Jugador&gt;::iterator it = llista.begin();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordflow">while</span> (it != llista.end()) {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    cout &lt;&lt; it-&gt;first &lt;&lt; <span class="stringliteral">&quot; Rk:&quot;</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">int</span> i = 0;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">bool</span> found = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">while</span> (not found and i &lt; ranking.size()) {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      <span class="keywordflow">if</span> (it == ranking[i]) found = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      <span class="keywordflow">else</span> ++i;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    cout &lt;&lt; i + 1 &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    it-&gt;second.imprimeix_estadistiques();</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    cout &lt;&lt; endl;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    ++it;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="class_ranking.html#a5484f780b1d031a64bcce44d7cb6a768">  118</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_ranking.html#a5484f780b1d031a64bcce44d7cb6a768">Ranking::imprimeix_jugador</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; j) {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  map&lt;string, Jugador&gt;::iterator it = llista.find(j);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keywordflow">if</span> (it == llista.end()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keywordtype">int</span> i = 0;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keywordtype">bool</span> found = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keywordflow">while</span> (not found and i &lt; ranking.size()) {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">if</span> (it == ranking[i]) found = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordflow">else</span> ++i;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  cout &lt;&lt; j &lt;&lt; <span class="stringliteral">&quot; Rk:&quot;</span> &lt;&lt; i + 1 &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  it-&gt;second.imprimeix_estadistiques();</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  cout &lt;&lt; endl;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="class_ranking.html#a6e33f856ed64f8b0a27338f7f54d647b">  133</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_ranking.html#a6e33f856ed64f8b0a27338f7f54d647b">Ranking::ordre_ranking</a>(<span class="keyword">const</span> map&lt;string, Jugador&gt;::iterator&amp; it1, <span class="keyword">const</span> map&lt;string, Jugador&gt;::iterator&amp; it2) {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keywordflow">return</span> it1-&gt;second.consultar_puntuacio() &gt; it2-&gt;second.consultar_puntuacio();</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_ranking_html_a1301d78fa35b7a57c10f890be6a5e724"><div class="ttname"><a href="class_ranking.html#a1301d78fa35b7a57c10f890be6a5e724">Ranking::actualitzar_tornejos</a></div><div class="ttdeci">void actualitzar_tornejos(const string &amp;j, int x)</div><div class="ttdoc">Augmenta l'estadística &quot;tornejos disputats&quot; del jugador amb nom j segons el valor de x</div><div class="ttdef"><b>Definition:</b> <a href="_ranking_8cc_source.html#l00081">Ranking.cc:81</a></div></div>
+<div class="ttc" id="aclass_ranking_html_a9bf1ea8615dedd1cfa9ab820454df01d"><div class="ttname"><a href="class_ranking.html#a9bf1ea8615dedd1cfa9ab820454df01d">Ranking::imprimeix_jugadors</a></div><div class="ttdeci">void imprimeix_jugadors()</div><div class="ttdoc">Imprimeix per ordre alfabètic el nom, la posició en el rànking, la puntuació i totes les estadístique...</div><div class="ttdef"><b>Definition:</b> <a href="_ranking_8cc_source.html#l00101">Ranking.cc:101</a></div></div>
+<div class="ttc" id="aclass_ranking_html_a5484f780b1d031a64bcce44d7cb6a768"><div class="ttname"><a href="class_ranking.html#a5484f780b1d031a64bcce44d7cb6a768">Ranking::imprimeix_jugador</a></div><div class="ttdeci">bool imprimeix_jugador(const string &amp;j)</div><div class="ttdoc">Imprimeix el nom, la posició en el rànking, la puntuació i totes les estadístiques del jugador amb no...</div><div class="ttdef"><b>Definition:</b> <a href="_ranking_8cc_source.html#l00118">Ranking.cc:118</a></div></div>
+<div class="ttc" id="aclass_ranking_html_ab63d27dc5a053748c2f39678d4a619c0"><div class="ttname"><a href="class_ranking.html#ab63d27dc5a053748c2f39678d4a619c0">Ranking::baixa_jugador</a></div><div class="ttdeci">bool baixa_jugador(const string &amp;j)</div><div class="ttdoc">Esborra del rànking i la llista del paràmetre implícit el jugador amb nom j</div><div class="ttdef"><b>Definition:</b> <a href="_ranking_8cc_source.html#l00037">Ranking.cc:37</a></div></div>
+<div class="ttc" id="aclass_ranking_html_a7dce29cb261b844884eb41fc4e68556b"><div class="ttname"><a href="class_ranking.html#a7dce29cb261b844884eb41fc4e68556b">Ranking::actualitzar_jocs</a></div><div class="ttdeci">void actualitzar_jocs(const string &amp;j, const pair&lt; int, int &gt; &amp;jocs)</div><div class="ttdoc">Actualitza les estadítiques &quot;jocs guanyats&quot; i &quot;jocs perduts&quot; del jugador amb nom j</div><div class="ttdef"><b>Definition:</b> <a href="_ranking_8cc_source.html#l00071">Ranking.cc:71</a></div></div>
+<div class="ttc" id="aclass_ranking_html_a8ae92fc20d1284ed16b8b0f64ec9cc62"><div class="ttname"><a href="class_ranking.html#a8ae92fc20d1284ed16b8b0f64ec9cc62">Ranking::actualitzar_sets</a></div><div class="ttdeci">void actualitzar_sets(const string &amp;j, const pair&lt; int, int &gt; &amp;sets)</div><div class="ttdoc">Actualitza les estadítiques &quot;sets guanyats&quot; i &quot;sets perduts&quot; del jugador amb nom j</div><div class="ttdef"><b>Definition:</b> <a href="_ranking_8cc_source.html#l00066">Ranking.cc:66</a></div></div>
+<div class="ttc" id="aclass_ranking_html_aa350c65acea82ec0ac42ec80db8bc00f"><div class="ttname"><a href="class_ranking.html#aa350c65acea82ec0ac42ec80db8bc00f">Ranking::~Ranking</a></div><div class="ttdeci">~Ranking()</div><div class="ttdoc">Destructora per defecte.</div><div class="ttdef"><b>Definition:</b> <a href="_ranking_8cc_source.html#l00025">Ranking.cc:25</a></div></div>
+<div class="ttc" id="aclass_ranking_html_a43fcf8beb2a3f1c1714e1ffbf61135e4"><div class="ttname"><a href="class_ranking.html#a43fcf8beb2a3f1c1714e1ffbf61135e4">Ranking::buscar_posicio</a></div><div class="ttdeci">string buscar_posicio(int x)</div><div class="ttdoc">Retorna el nom del jugador a la posició x del rànking.</div><div class="ttdef"><b>Definition:</b> <a href="_ranking_8cc_source.html#l00090">Ranking.cc:90</a></div></div>
+<div class="ttc" id="aclass_ranking_html_a5fb3646eb86e5d01b1f61266e9bbe8c6"><div class="ttname"><a href="class_ranking.html#a5fb3646eb86e5d01b1f61266e9bbe8c6">Ranking::alta_jugador</a></div><div class="ttdeci">bool alta_jugador(const string &amp;p)</div><div class="ttdoc">Afegeix un amb nom p jugador al rànking i la llista del paràmetre implícit.</div><div class="ttdef"><b>Definition:</b> <a href="_ranking_8cc_source.html#l00027">Ranking.cc:27</a></div></div>
+<div class="ttc" id="aclass_ranking_html_ab8432ae2eecb7bbb653a94bbe964d32c"><div class="ttname"><a href="class_ranking.html#ab8432ae2eecb7bbb653a94bbe964d32c">Ranking::mida</a></div><div class="ttdeci">int mida()</div><div class="ttdoc">Retorna el número de jugadors que conté la llista/rànking del paràmetre implícit.</div><div class="ttdef"><b>Definition:</b> <a href="_ranking_8cc_source.html#l00086">Ranking.cc:86</a></div></div>
+<div class="ttc" id="aclass_ranking_html_ab00377801bf2969af81146c2a050f6fb"><div class="ttname"><a href="class_ranking.html#ab00377801bf2969af81146c2a050f6fb">Ranking::ordenar_ranking</a></div><div class="ttdeci">void ordenar_ranking()</div><div class="ttdoc">Ordena en ordre creixent de puntuació els jugadors del rànking.</div><div class="ttdef"><b>Definition:</b> <a href="_ranking_8cc_source.html#l00057">Ranking.cc:57</a></div></div>
+<div class="ttc" id="aclass_ranking_html_a3cafaca9c780db230bf52f87c89c4722"><div class="ttname"><a href="class_ranking.html#a3cafaca9c780db230bf52f87c89c4722">Ranking::actualitzar_partits</a></div><div class="ttdeci">void actualitzar_partits(const string &amp;j, const pair&lt; int, int &gt; &amp;partits)</div><div class="ttdoc">Actualitza les estadítiques &quot;partits guanyats&quot; i &quot;partits perduts&quot; del jugador amb nom j</div><div class="ttdef"><b>Definition:</b> <a href="_ranking_8cc_source.html#l00061">Ranking.cc:61</a></div></div>
+<div class="ttc" id="aclass_ranking_html_a0655d4f2b9e8db5c2c5bd74197ed5b30"><div class="ttname"><a href="class_ranking.html#a0655d4f2b9e8db5c2c5bd74197ed5b30">Ranking::actualitzar_punts</a></div><div class="ttdeci">void actualitzar_punts(const string &amp;j, int x)</div><div class="ttdoc">Actualitza la puntuació del jugador amb nom j segons el valor de x</div><div class="ttdef"><b>Definition:</b> <a href="_ranking_8cc_source.html#l00076">Ranking.cc:76</a></div></div>
+<div class="ttc" id="aclass_ranking_html_a7f68c4f16408337d955063e16d4c18f8"><div class="ttname"><a href="class_ranking.html#a7f68c4f16408337d955063e16d4c18f8">Ranking::imprimeix_ranking</a></div><div class="ttdeci">void imprimeix_ranking()</div><div class="ttdoc">Imprimeix en ordre la posició en el rànking, el nom i la puntuació de tots els jugadors.</div><div class="ttdef"><b>Definition:</b> <a href="_ranking_8cc_source.html#l00094">Ranking.cc:94</a></div></div>
+<div class="ttc" id="a_ranking_8hh_html"><div class="ttname"><a href="_ranking_8hh.html">Ranking.hh</a></div><div class="ttdoc">Especificació de la classe Ranking.</div></div>
+<div class="ttc" id="aclass_jugador_html"><div class="ttname"><a href="class_jugador.html">Jugador</a></div><div class="ttdef"><b>Definition:</b> <a href="_jugador_8hh_source.html#l00014">Jugador.hh:14</a></div></div>
+<div class="ttc" id="aclass_ranking_html_a7b1142b455d06f3d455d796ed329118f"><div class="ttname"><a href="class_ranking.html#a7b1142b455d06f3d455d796ed329118f">Ranking::Ranking</a></div><div class="ttdeci">Ranking()</div><div class="ttdoc">Constructora per defecte.</div><div class="ttdef"><b>Definition:</b> <a href="_ranking_8cc_source.html#l00007">Ranking.cc:7</a></div></div>
+<div class="ttc" id="aclass_ranking_html_a6e33f856ed64f8b0a27338f7f54d647b"><div class="ttname"><a href="class_ranking.html#a6e33f856ed64f8b0a27338f7f54d647b">Ranking::ordre_ranking</a></div><div class="ttdeci">static bool ordre_ranking(const map&lt; string, Jugador &gt;::iterator &amp;it1, const map&lt; string, Jugador &gt;::iterator &amp;it2)</div><div class="ttdoc">Retorna cert si la puntuació del jugador apuntat per it1 és major que la del jugador apuntat per it2,...</div><div class="ttdef"><b>Definition:</b> <a href="_ranking_8cc_source.html#l00133">Ranking.cc:133</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generat per &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

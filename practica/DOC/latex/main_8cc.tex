@@ -1,0 +1,129 @@
+\hypertarget{main_8cc}{}\doxysection{Referència del Fitxer main.\+cc}
+\label{main_8cc}\index{main.cc@{main.cc}}
+Inclou el graf de dependències per a main.\+cc\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cc__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Funcions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Programa principal per la pràctica de P\+R\+O2 de 2022\+: {\itshape Circuito de torneos de tenis} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentació de les Funcions}
+\mbox{\Hypertarget{main_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cc_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cc@{main.cc}!main@{main}}
+\index{main@{main}!main.cc@{main.cc}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Programa principal per la pràctica de P\+R\+O2 de 2022\+: {\itshape Circuito de torneos de tenis} 
+
+
+
+Definició a la línia 16 del fitxer main.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16            \{}
+\DoxyCodeLine{17     }
+\DoxyCodeLine{18     \textcolor{keywordtype}{int} num\_cat, max\_niv;}
+\DoxyCodeLine{19     cin >> num\_cat >> max\_niv;}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_conj___categories}{Conj\_Categories}} categories(num\_cat, max\_niv);}
+\DoxyCodeLine{21     }
+\DoxyCodeLine{22     \textcolor{keywordtype}{int} num\_tjs;}
+\DoxyCodeLine{23     cin >> num\_tjs;}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_conjunt___tornejos}{Conjunt\_Tornejos}} tour(num\_tjs);}
+\DoxyCodeLine{25     }
+\DoxyCodeLine{26     \textcolor{keywordtype}{int} num\_jgds;}
+\DoxyCodeLine{27     cin >> num\_jgds;}
+\DoxyCodeLine{28     list<string> tour\_inicial = tour.llistar\_tornejos();}
+\DoxyCodeLine{29     \mbox{\hyperlink{class_ranking}{Ranking}} ranking(num\_jgds, tour\_inicial);}
+\DoxyCodeLine{30     }
+\DoxyCodeLine{31     \textcolor{keywordtype}{string} comando;}
+\DoxyCodeLine{32     cin >> comando;}
+\DoxyCodeLine{33     \textcolor{keywordflow}{while} (comando != \textcolor{stringliteral}{"fin"}) \{}
+\DoxyCodeLine{34         \textcolor{keywordflow}{if} (comando == \textcolor{stringliteral}{"nuevo\_jugador"} or comando == \textcolor{stringliteral}{"nj"}) \{}
+\DoxyCodeLine{35             \textcolor{keywordtype}{string} p;}
+\DoxyCodeLine{36             cin >> p;}
+\DoxyCodeLine{37             list<Jugador>::iterator it = ranking.buscar\_jugador(p);}
+\DoxyCodeLine{38             \textcolor{keywordflow}{if} (ranking.buscar\_iterador(it)) cout << \textcolor{stringliteral}{"missatge d'error"} << endl;}
+\DoxyCodeLine{39             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{40                 list<string> tjs = tour.llistar\_tornejos();}
+\DoxyCodeLine{41                 \mbox{\hyperlink{class_jugador}{Jugador}} j(p, tjs);}
+\DoxyCodeLine{42                 ranking.alta\_jugador(j);}
+\DoxyCodeLine{43             \}}
+\DoxyCodeLine{44         \}}
+\DoxyCodeLine{45         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (comando == \textcolor{stringliteral}{"nuevo\_torneo"} or comando == \textcolor{stringliteral}{"nt"}) \{}
+\DoxyCodeLine{46             \textcolor{keywordtype}{string} t;}
+\DoxyCodeLine{47             \textcolor{keywordtype}{int} c;}
+\DoxyCodeLine{48             cin >> t >> c;}
+\DoxyCodeLine{49             list<Torneig>::iterator it = tour.buscar\_torneig(t);}
+\DoxyCodeLine{50             \textcolor{keywordflow}{if} (tour.buscar\_iterador(it)) cout << \textcolor{stringliteral}{"missatge d'error"} << endl;}
+\DoxyCodeLine{51             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{52                 \mbox{\hyperlink{class_torneig}{Torneig}} tg(t, c);}
+\DoxyCodeLine{53                 tour.alta\_torneig(tg);}
+\DoxyCodeLine{54                 ranking.afegir\_torneig(t);}
+\DoxyCodeLine{55             \}}
+\DoxyCodeLine{56         \}}
+\DoxyCodeLine{57         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (comando == \textcolor{stringliteral}{"baja\_jugador"} or comando == \textcolor{stringliteral}{"bj"}) \{}
+\DoxyCodeLine{58             \textcolor{keywordtype}{string} p;}
+\DoxyCodeLine{59             cin >> p;}
+\DoxyCodeLine{60             list<Jugador>::iterator it = ranking.buscar\_jugador(p);}
+\DoxyCodeLine{61             \textcolor{keywordflow}{if} (not ranking.buscar\_iterador(it)) cout << \textcolor{stringliteral}{"missatge d'error"} << endl;}
+\DoxyCodeLine{62             \textcolor{keywordflow}{else} ranking.baixa\_jugador(it);}
+\DoxyCodeLine{63         \}}
+\DoxyCodeLine{64         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (comando == \textcolor{stringliteral}{"baja\_torneo"} or comando == \textcolor{stringliteral}{"bt"}) \{}
+\DoxyCodeLine{65             \textcolor{keywordtype}{string} t;}
+\DoxyCodeLine{66             cin >> t;}
+\DoxyCodeLine{67             list<Torneig>::iterator it = tour.buscar\_torneig(t);}
+\DoxyCodeLine{68             \textcolor{keywordflow}{if} (not tour.buscar\_iterador(it)) cout << \textcolor{stringliteral}{"missatge d'error"} << endl;}
+\DoxyCodeLine{69             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{70                 tour.baixa\_torneig(it);}
+\DoxyCodeLine{71                 ranking.eliminar\_torneig(t);}
+\DoxyCodeLine{72             \}}
+\DoxyCodeLine{73         \}}
+\DoxyCodeLine{74         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (comando == \textcolor{stringliteral}{"iniciar\_torneo"} or comando == \textcolor{stringliteral}{"it"}) \{}
+\DoxyCodeLine{75             \textcolor{keywordtype}{string} t;}
+\DoxyCodeLine{76             \textcolor{keywordtype}{int} n;}
+\DoxyCodeLine{77             cin >> t >> n;}
+\DoxyCodeLine{78             list<string> inscripcions = ranking.llista\_inscripcions(n);}
+\DoxyCodeLine{79             tour.imprimeix\_emparellaments(t, inscripcions);}
+\DoxyCodeLine{80         \}}
+\DoxyCodeLine{81         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (comando == \textcolor{stringliteral}{"finalizar\_torneo"} or comando == \textcolor{stringliteral}{"ft"}) \{}
+\DoxyCodeLine{82             \textcolor{keywordtype}{string} t;}
+\DoxyCodeLine{83             cin >> t;}
+\DoxyCodeLine{84             tour.finalitzar\_torneig(t);}
+\DoxyCodeLine{85             \textcolor{keywordtype}{int} c = tour.categoria(t);}
+\DoxyCodeLine{86             vector<int> punts = categories.punts(c);}
+\DoxyCodeLine{87             ranking.actualitzar\_ranking(punts);}
+\DoxyCodeLine{88         \}}
+\DoxyCodeLine{89         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (comando == \textcolor{stringliteral}{"listar\_ranking"} or comando == \textcolor{stringliteral}{"lr"}) \{}
+\DoxyCodeLine{90             ranking.imprimeix\_ranking();}
+\DoxyCodeLine{91         \}}
+\DoxyCodeLine{92         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (comando == \textcolor{stringliteral}{"listar\_jugadores"} or comando == \textcolor{stringliteral}{"lj"}) \{}
+\DoxyCodeLine{93             ranking.imprimeix\_jugadors();}
+\DoxyCodeLine{94         \}}
+\DoxyCodeLine{95         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (comando == \textcolor{stringliteral}{"consultar\_jugador"} or comando == \textcolor{stringliteral}{"cj"}) \{}
+\DoxyCodeLine{96             \textcolor{keywordtype}{string} p;}
+\DoxyCodeLine{97             cin >> p;}
+\DoxyCodeLine{98             list<Jugador>::iterator it = ranking.buscar\_jugador(p);}
+\DoxyCodeLine{99             \textcolor{keywordflow}{if} (not ranking.buscar\_iterador(it)) cout << \textcolor{stringliteral}{"missatge d'error"} << endl;}
+\DoxyCodeLine{100             \textcolor{keywordflow}{else} ranking.imprimeix\_jugador(it);}
+\DoxyCodeLine{101         \}}
+\DoxyCodeLine{102         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (comando == \textcolor{stringliteral}{"listar\_torneos"} or comando == \textcolor{stringliteral}{"lt"}) \{}
+\DoxyCodeLine{103             tour.imprimeix\_tour();}
+\DoxyCodeLine{104         \}}
+\DoxyCodeLine{105         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (comando == \textcolor{stringliteral}{"listar\_categorias"} or comando == \textcolor{stringliteral}{"lc"}) \{}
+\DoxyCodeLine{106             categories.imprimeix\_categories();}
+\DoxyCodeLine{107         \}}
+\DoxyCodeLine{108     \}}
+\DoxyCodeLine{109 \}}
+
+\end{DoxyCode}

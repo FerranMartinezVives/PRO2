@@ -1,0 +1,233 @@
+\hypertarget{class_conjunt___tornejos}{}\doxysection{Referència de la Classe Conjunt\+\_\+\+Tornejos}
+\label{class_conjunt___tornejos}\index{Conjunt\_Tornejos@{Conjunt\_Tornejos}}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_conjunt___tornejos_a3bdbea6ac373fbfaa32fd270eafa9d12}{Conjunt\+\_\+\+Tornejos}} ()
+\begin{DoxyCompactList}\small\item\em Constructora per defecte. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_conjunt___tornejos_afbdd03e520ad6b7043bf05955b6b095f}{Conjunt\+\_\+\+Tornejos}} (int num\+\_\+tjs)
+\begin{DoxyCompactList}\small\item\em Constructora a partir del número de tornejos. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_conjunt___tornejos_a31ed43e52e40ef1605b5018c81e46b28}{$\sim$\+Conjunt\+\_\+\+Tornejos}} ()
+\begin{DoxyCompactList}\small\item\em Destructora per defecte. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_conjunt___tornejos_a4da630471c1c4d27b532686a79114a21}{alta\+\_\+torneig}} (const \mbox{\hyperlink{class_torneig}{Torneig}} \&tg)
+\begin{DoxyCompactList}\small\item\em Afegeix el torneig {\itshape tg} a la llista de tornejos del paràmetre implícit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_conjunt___tornejos_a1d771eccbd52736e8fd84e3d0b11451c}{baixa\+\_\+torneig}} (list$<$ \mbox{\hyperlink{class_torneig}{Torneig}} $>$\+::iterator it)
+\begin{DoxyCompactList}\small\item\em Esborra l\textquotesingle{}element apuntat per {\itshape it} de la llista de tornejos del paràmetre implícit. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_conjunt___tornejos_a972753b1b9867b6987db9cfdaad314e3}{categoria}} (const string \&t)
+\begin{DoxyCompactList}\small\item\em Retorna la categoria del torneig amb nom {\itshape t} \end{DoxyCompactList}\item 
+list$<$ \mbox{\hyperlink{class_torneig}{Torneig}} $>$\+::iterator \mbox{\hyperlink{class_conjunt___tornejos_abc9140532a73a2f1faacffcd3037e0f2}{buscar\+\_\+torneig}} (const string \&t)
+\begin{DoxyCompactList}\small\item\em Retorna la posició on es troba l\textquotesingle{}element amb nom {\itshape t} \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_conjunt___tornejos_a1ce15b0b0566220da46c8d25c37815fb}{buscar\+\_\+iterador}} (list$<$ \mbox{\hyperlink{class_torneig}{Torneig}} $>$\+::iterator it)
+\begin{DoxyCompactList}\small\item\em Indica si l\textquotesingle{}iterador {\itshape it} apunta a algun element de la llista de tornejos del paràmetre implícit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_conjunt___tornejos_a60b4b58f208b766f6e1fbe4845f35dba}{imprimeix\+\_\+tour}} ()
+\begin{DoxyCompactList}\small\item\em Imprimeix per ordre el nom i la categoria de tots els tornejos de la llista de tornejos del paràmetre implícit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_conjunt___tornejos_a83b6ed8a64b78b166ec6b7b455a2037c}{imprimeix\+\_\+emparellaments}} (string t, const list$<$ string $>$ \&inscripcions)
+\begin{DoxyCompactList}\small\item\em Imprimeix els emparellaments entre els jugadors representats per {\itshape inscripcions} al torneig amb nom {\itshape t} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_conjunt___tornejos_ad01bb494f32ea74e444cff7b368f454c}{finalitzar\+\_\+torneig}} (const string \&t)
+\begin{DoxyCompactList}\small\item\em Posa a \char`\"{}no iniciat\char`\"{} l\textquotesingle{}estat del torneig amb nom {\itshape t} de la llista de tornejos del paràmetre implícit. \end{DoxyCompactList}\item 
+list$<$ string $>$ \mbox{\hyperlink{class_conjunt___tornejos_a16ea053304ee506432ce087ed5d2d415}{llistar\+\_\+tornejos}} ()
+\begin{DoxyCompactList}\small\item\em Retorna una llista amb els noms de tots els tornejos de la llista de tornejos del paràmetre implícit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+
+
+Definició a la línia 11 del fitxer Conjunt\+\_\+\+Tornejos.\+hh.
+
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_conjunt___tornejos_a3bdbea6ac373fbfaa32fd270eafa9d12}\label{class_conjunt___tornejos_a3bdbea6ac373fbfaa32fd270eafa9d12}} 
+\index{Conjunt\_Tornejos@{Conjunt\_Tornejos}!Conjunt\_Tornejos@{Conjunt\_Tornejos}}
+\index{Conjunt\_Tornejos@{Conjunt\_Tornejos}!Conjunt\_Tornejos@{Conjunt\_Tornejos}}
+\doxysubsubsection{\texorpdfstring{Conjunt\_Tornejos()}{Conjunt\_Tornejos()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Conjunt\+\_\+\+Tornejos\+::\+Conjunt\+\_\+\+Tornejos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructora per defecte. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el paràmetre implícit és una llista buida de tornejos 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_conjunt___tornejos_afbdd03e520ad6b7043bf05955b6b095f}\label{class_conjunt___tornejos_afbdd03e520ad6b7043bf05955b6b095f}} 
+\index{Conjunt\_Tornejos@{Conjunt\_Tornejos}!Conjunt\_Tornejos@{Conjunt\_Tornejos}}
+\index{Conjunt\_Tornejos@{Conjunt\_Tornejos}!Conjunt\_Tornejos@{Conjunt\_Tornejos}}
+\doxysubsubsection{\texorpdfstring{Conjunt\_Tornejos()}{Conjunt\_Tornejos()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Conjunt\+\_\+\+Tornejos\+::\+Conjunt\+\_\+\+Tornejos (\begin{DoxyParamCaption}\item[{int}]{num\+\_\+tjs }\end{DoxyParamCaption})}
+
+
+
+Constructora a partir del número de tornejos. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape num\+\_\+tjs} $>$= {\itshape 0}, al canal d\textquotesingle{}entrada hi ha {\itshape num\+\_\+tjs} parells de strings i enters 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el paràmetre implícit és una llista ordenada alfabèticament segons els noms dels tornejos representats pels parells del canal d\textquotesingle{}entrada 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_conjunt___tornejos_a31ed43e52e40ef1605b5018c81e46b28}\label{class_conjunt___tornejos_a31ed43e52e40ef1605b5018c81e46b28}} 
+\index{Conjunt\_Tornejos@{Conjunt\_Tornejos}!````~Conjunt\_Tornejos@{$\sim$Conjunt\_Tornejos}}
+\index{````~Conjunt\_Tornejos@{$\sim$Conjunt\_Tornejos}!Conjunt\_Tornejos@{Conjunt\_Tornejos}}
+\doxysubsubsection{\texorpdfstring{$\sim$Conjunt\_Tornejos()}{~Conjunt\_Tornejos()}}
+{\footnotesize\ttfamily Conjunt\+\_\+\+Tornejos\+::$\sim$\+Conjunt\+\_\+\+Tornejos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructora per defecte. 
+
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_conjunt___tornejos_a4da630471c1c4d27b532686a79114a21}\label{class_conjunt___tornejos_a4da630471c1c4d27b532686a79114a21}} 
+\index{Conjunt\_Tornejos@{Conjunt\_Tornejos}!alta\_torneig@{alta\_torneig}}
+\index{alta\_torneig@{alta\_torneig}!Conjunt\_Tornejos@{Conjunt\_Tornejos}}
+\doxysubsubsection{\texorpdfstring{alta\_torneig()}{alta\_torneig()}}
+{\footnotesize\ttfamily void Conjunt\+\_\+\+Tornejos\+::alta\+\_\+torneig (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_torneig}{Torneig}} \&}]{tg }\end{DoxyParamCaption})}
+
+
+
+Afegeix el torneig {\itshape tg} a la llista de tornejos del paràmetre implícit. 
+
+\begin{DoxyPrecond}{Precondició}
+no hi ha cap element a la llista de tornejos del paràmetre implícit que tingui el mateix nom que {\itshape tg} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+s\textquotesingle{}ha afegit {\itshape tg} a la llista de tornejos del paràmetre implícit tal que segueix ordenada 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_conjunt___tornejos_a1d771eccbd52736e8fd84e3d0b11451c}\label{class_conjunt___tornejos_a1d771eccbd52736e8fd84e3d0b11451c}} 
+\index{Conjunt\_Tornejos@{Conjunt\_Tornejos}!baixa\_torneig@{baixa\_torneig}}
+\index{baixa\_torneig@{baixa\_torneig}!Conjunt\_Tornejos@{Conjunt\_Tornejos}}
+\doxysubsubsection{\texorpdfstring{baixa\_torneig()}{baixa\_torneig()}}
+{\footnotesize\ttfamily void Conjunt\+\_\+\+Tornejos\+::baixa\+\_\+torneig (\begin{DoxyParamCaption}\item[{list$<$ \mbox{\hyperlink{class_torneig}{Torneig}} $>$\+::iterator}]{it }\end{DoxyParamCaption})}
+
+
+
+Esborra l\textquotesingle{}element apuntat per {\itshape it} de la llista de tornejos del paràmetre implícit. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape it} apunta a un element de la llista de tornejos del paràmetre implícit 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+s\textquotesingle{}ha esborrat l\textquotesingle{}element apuntat per {\itshape it} de la llista de tornejos del paràmetre implícit 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_conjunt___tornejos_a972753b1b9867b6987db9cfdaad314e3}\label{class_conjunt___tornejos_a972753b1b9867b6987db9cfdaad314e3}} 
+\index{Conjunt\_Tornejos@{Conjunt\_Tornejos}!categoria@{categoria}}
+\index{categoria@{categoria}!Conjunt\_Tornejos@{Conjunt\_Tornejos}}
+\doxysubsubsection{\texorpdfstring{categoria()}{categoria()}}
+{\footnotesize\ttfamily int Conjunt\+\_\+\+Tornejos\+::categoria (\begin{DoxyParamCaption}\item[{const string \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Retorna la categoria del torneig amb nom {\itshape t} 
+
+\begin{DoxyPrecond}{Precondició}
+la llista de tornejos del paràmetre implícit conté un únic element amb nom {\itshape t} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+retorna la categoria del torneig amb nom {\itshape t} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_conjunt___tornejos_abc9140532a73a2f1faacffcd3037e0f2}\label{class_conjunt___tornejos_abc9140532a73a2f1faacffcd3037e0f2}} 
+\index{Conjunt\_Tornejos@{Conjunt\_Tornejos}!buscar\_torneig@{buscar\_torneig}}
+\index{buscar\_torneig@{buscar\_torneig}!Conjunt\_Tornejos@{Conjunt\_Tornejos}}
+\doxysubsubsection{\texorpdfstring{buscar\_torneig()}{buscar\_torneig()}}
+{\footnotesize\ttfamily list$<$\mbox{\hyperlink{class_torneig}{Torneig}}$>$\+::iterator Conjunt\+\_\+\+Tornejos\+::buscar\+\_\+torneig (\begin{DoxyParamCaption}\item[{const string \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Retorna la posició on es troba l\textquotesingle{}element amb nom {\itshape t} 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape t} és un string no buit 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+retorna la posició on es troba l\textquotesingle{}element amb nom {\itshape t} a la llista de tornejos {\itshape tour} del paràmetre implícit si hi és, {\itshape tour.\+end()} altrament 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_conjunt___tornejos_a1ce15b0b0566220da46c8d25c37815fb}\label{class_conjunt___tornejos_a1ce15b0b0566220da46c8d25c37815fb}} 
+\index{Conjunt\_Tornejos@{Conjunt\_Tornejos}!buscar\_iterador@{buscar\_iterador}}
+\index{buscar\_iterador@{buscar\_iterador}!Conjunt\_Tornejos@{Conjunt\_Tornejos}}
+\doxysubsubsection{\texorpdfstring{buscar\_iterador()}{buscar\_iterador()}}
+{\footnotesize\ttfamily bool Conjunt\+\_\+\+Tornejos\+::buscar\+\_\+iterador (\begin{DoxyParamCaption}\item[{list$<$ \mbox{\hyperlink{class_torneig}{Torneig}} $>$\+::iterator}]{it }\end{DoxyParamCaption})}
+
+
+
+Indica si l\textquotesingle{}iterador {\itshape it} apunta a algun element de la llista de tornejos del paràmetre implícit. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape it} apunta a una posició de la llista {\itshape tour} de tornejos del paràmetre implícit entre {\itshape tour.\+begin()} i {\itshape tour.\+end()}, ambdós inclosos 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+retorna {\itshape it} != {\itshape tour.\+end()} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_conjunt___tornejos_a60b4b58f208b766f6e1fbe4845f35dba}\label{class_conjunt___tornejos_a60b4b58f208b766f6e1fbe4845f35dba}} 
+\index{Conjunt\_Tornejos@{Conjunt\_Tornejos}!imprimeix\_tour@{imprimeix\_tour}}
+\index{imprimeix\_tour@{imprimeix\_tour}!Conjunt\_Tornejos@{Conjunt\_Tornejos}}
+\doxysubsubsection{\texorpdfstring{imprimeix\_tour()}{imprimeix\_tour()}}
+{\footnotesize\ttfamily void Conjunt\+\_\+\+Tornejos\+::imprimeix\+\_\+tour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Imprimeix per ordre el nom i la categoria de tots els tornejos de la llista de tornejos del paràmetre implícit. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+s\textquotesingle{}han imprès al canal de sortida el nom i la categoria de tots els tornejos de la llista de tornejos del paràmetre implícit 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_conjunt___tornejos_a83b6ed8a64b78b166ec6b7b455a2037c}\label{class_conjunt___tornejos_a83b6ed8a64b78b166ec6b7b455a2037c}} 
+\index{Conjunt\_Tornejos@{Conjunt\_Tornejos}!imprimeix\_emparellaments@{imprimeix\_emparellaments}}
+\index{imprimeix\_emparellaments@{imprimeix\_emparellaments}!Conjunt\_Tornejos@{Conjunt\_Tornejos}}
+\doxysubsubsection{\texorpdfstring{imprimeix\_emparellaments()}{imprimeix\_emparellaments()}}
+{\footnotesize\ttfamily void Conjunt\+\_\+\+Tornejos\+::imprimeix\+\_\+emparellaments (\begin{DoxyParamCaption}\item[{string}]{t,  }\item[{const list$<$ string $>$ \&}]{inscripcions }\end{DoxyParamCaption})}
+
+
+
+Imprimeix els emparellaments entre els jugadors representats per {\itshape inscripcions} al torneig amb nom {\itshape t} 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape t} és el nom d\textquotesingle{}un torneig de la llista de tornejos del paràmetre implícit que no està iniciat, {\itshape inscripcions} és la llista ordenada per ranking de jugadors a emparellar 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+s\textquotesingle{}han imprès al canal de sortida els emparellaments entre els jugadors de {\itshape inscripcions} pel torneig {\itshape t}, s\textquotesingle{}ha iniciat el torneig amb nom {\itshape t} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_conjunt___tornejos_ad01bb494f32ea74e444cff7b368f454c}\label{class_conjunt___tornejos_ad01bb494f32ea74e444cff7b368f454c}} 
+\index{Conjunt\_Tornejos@{Conjunt\_Tornejos}!finalitzar\_torneig@{finalitzar\_torneig}}
+\index{finalitzar\_torneig@{finalitzar\_torneig}!Conjunt\_Tornejos@{Conjunt\_Tornejos}}
+\doxysubsubsection{\texorpdfstring{finalitzar\_torneig()}{finalitzar\_torneig()}}
+{\footnotesize\ttfamily void Conjunt\+\_\+\+Tornejos\+::finalitzar\+\_\+torneig (\begin{DoxyParamCaption}\item[{const string \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Posa a \char`\"{}no iniciat\char`\"{} l\textquotesingle{}estat del torneig amb nom {\itshape t} de la llista de tornejos del paràmetre implícit. 
+
+\begin{DoxyPrecond}{Precondició}
+hi ha a la llista de tornejos del paràmetre implícit un torneig amb nom {\itshape t} que ha estat iniciat 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+l\textquotesingle{}estat del torneig amb nom {\itshape t} passa a ser \char`\"{}no iniciat\char`\"{} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_conjunt___tornejos_a16ea053304ee506432ce087ed5d2d415}\label{class_conjunt___tornejos_a16ea053304ee506432ce087ed5d2d415}} 
+\index{Conjunt\_Tornejos@{Conjunt\_Tornejos}!llistar\_tornejos@{llistar\_tornejos}}
+\index{llistar\_tornejos@{llistar\_tornejos}!Conjunt\_Tornejos@{Conjunt\_Tornejos}}
+\doxysubsubsection{\texorpdfstring{llistar\_tornejos()}{llistar\_tornejos()}}
+{\footnotesize\ttfamily list$<$string$>$ Conjunt\+\_\+\+Tornejos\+::llistar\+\_\+tornejos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna una llista amb els noms de tots els tornejos de la llista de tornejos del paràmetre implícit. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+retorna una llista amb els noms de tots els tornejos de la llista de tornejos del paràmetre implícit 
+\end{DoxyPostcond}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_conjunt___tornejos_8hh}{Conjunt\+\_\+\+Tornejos.\+hh}}\end{DoxyCompactItemize}

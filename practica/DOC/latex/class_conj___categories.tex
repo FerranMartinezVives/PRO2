@@ -1,0 +1,107 @@
+\hypertarget{class_conj___categories}{}\doxysection{Referència de la Classe Conj\+\_\+\+Categories}
+\label{class_conj___categories}\index{Conj\_Categories@{Conj\_Categories}}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_conj___categories_ad698ae0749c25a6618bbb327fba78808}{Conj\+\_\+\+Categories}} ()
+\begin{DoxyCompactList}\small\item\em Constructora per defecte. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_conj___categories_aba1c2a79a79eda69e05e4ab785ce97ec}{Conj\+\_\+\+Categories}} (int c, int k)
+\begin{DoxyCompactList}\small\item\em Constructora a partir del número de categories i el número màxim de nivells per categoria. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_conj___categories_a3c1f4656321d9fd56124eb2f24bbff58}{$\sim$\+Conj\+\_\+\+Categories}} ()
+\begin{DoxyCompactList}\small\item\em Destructora per defecte. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \mbox{\hyperlink{class_conj___categories_a7cebfe4f6e7e47e7dd826aa954606b84}{punts}} (int c)
+\begin{DoxyCompactList}\small\item\em Retorna els punts per nivell d\textquotesingle{}una categoria. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_conj___categories_a72edaa4af121256da492dcb6d9f5b29d}{imprimeix\+\_\+categories}} ()
+\begin{DoxyCompactList}\small\item\em Imprimeix la informació sobre el paràmetre implícit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+
+
+Definició a la línia 10 del fitxer Conjunt\+\_\+\+Categories.\+hh.
+
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_conj___categories_ad698ae0749c25a6618bbb327fba78808}\label{class_conj___categories_ad698ae0749c25a6618bbb327fba78808}} 
+\index{Conj\_Categories@{Conj\_Categories}!Conj\_Categories@{Conj\_Categories}}
+\index{Conj\_Categories@{Conj\_Categories}!Conj\_Categories@{Conj\_Categories}}
+\doxysubsubsection{\texorpdfstring{Conj\_Categories()}{Conj\_Categories()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Conj\+\_\+\+Categories\+::\+Conj\+\_\+\+Categories (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructora per defecte. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el paràmetre implícit té una taula de punts i un vector de noms de categories buits 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_conj___categories_aba1c2a79a79eda69e05e4ab785ce97ec}\label{class_conj___categories_aba1c2a79a79eda69e05e4ab785ce97ec}} 
+\index{Conj\_Categories@{Conj\_Categories}!Conj\_Categories@{Conj\_Categories}}
+\index{Conj\_Categories@{Conj\_Categories}!Conj\_Categories@{Conj\_Categories}}
+\doxysubsubsection{\texorpdfstring{Conj\_Categories()}{Conj\_Categories()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Conj\+\_\+\+Categories\+::\+Conj\+\_\+\+Categories (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+
+
+Constructora a partir del número de categories i el número màxim de nivells per categoria. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape c} $>$= 1, {\itshape k} $>$= 1, al canal d\textquotesingle{}entrada hi ha {\itshape c} strings, seguits de {\itshape c $\ast$ k} enters majors o iguals que 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+\+: el vector de noms de les categories té com elements els {\itshape c} strings del canal d\textquotesingle{}entrada, la taula de punts té {\itshape c} files i {\itshape k} columnes, i els seus elements són els enters que hi havia al canal d\textquotesingle{}entrada 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_conj___categories_a3c1f4656321d9fd56124eb2f24bbff58}\label{class_conj___categories_a3c1f4656321d9fd56124eb2f24bbff58}} 
+\index{Conj\_Categories@{Conj\_Categories}!````~Conj\_Categories@{$\sim$Conj\_Categories}}
+\index{````~Conj\_Categories@{$\sim$Conj\_Categories}!Conj\_Categories@{Conj\_Categories}}
+\doxysubsubsection{\texorpdfstring{$\sim$Conj\_Categories()}{~Conj\_Categories()}}
+{\footnotesize\ttfamily Conj\+\_\+\+Categories\+::$\sim$\+Conj\+\_\+\+Categories (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructora per defecte. 
+
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_conj___categories_a7cebfe4f6e7e47e7dd826aa954606b84}\label{class_conj___categories_a7cebfe4f6e7e47e7dd826aa954606b84}} 
+\index{Conj\_Categories@{Conj\_Categories}!punts@{punts}}
+\index{punts@{punts}!Conj\_Categories@{Conj\_Categories}}
+\doxysubsubsection{\texorpdfstring{punts()}{punts()}}
+{\footnotesize\ttfamily vector$<$int$>$ Conj\+\_\+\+Categories\+::punts (\begin{DoxyParamCaption}\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Retorna els punts per nivell d\textquotesingle{}una categoria. 
+
+\begin{DoxyPrecond}{Precondició}
+\+: 1 $<$= {\itshape c} $<$= mida de la taula de punts 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+retorna el vector de punts corresponent a la categoria {\itshape c} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_conj___categories_a72edaa4af121256da492dcb6d9f5b29d}\label{class_conj___categories_a72edaa4af121256da492dcb6d9f5b29d}} 
+\index{Conj\_Categories@{Conj\_Categories}!imprimeix\_categories@{imprimeix\_categories}}
+\index{imprimeix\_categories@{imprimeix\_categories}!Conj\_Categories@{Conj\_Categories}}
+\doxysubsubsection{\texorpdfstring{imprimeix\_categories()}{imprimeix\_categories()}}
+{\footnotesize\ttfamily void Conj\+\_\+\+Categories\+::imprimeix\+\_\+categories (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Imprimeix la informació sobre el paràmetre implícit. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+s\textquotesingle{}han imprès al canal de sortida els noms de totes les categories, a més a més de la taula de punts per cada categoria 
+\end{DoxyPostcond}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_conjunt___categories_8hh}{Conjunt\+\_\+\+Categories.\+hh}}\end{DoxyCompactItemize}

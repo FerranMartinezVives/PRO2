@@ -1,0 +1,660 @@
+\hypertarget{class_partit}{}\doxysection{Referència de la Classe Partit}
+\label{class_partit}\index{Partit@{Partit}}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_partit_a80beaa342d3415e7bfc33319dbe302bf}{Partit}} ()
+\begin{DoxyCompactList}\small\item\em Constructora per defecte. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_partit_aee6691b56de92ac767b692070bd69523}{Partit}} (const string \&s)
+\begin{DoxyCompactList}\small\item\em Constructora a partir del resultat d\textquotesingle{}un partit, representat per {\itshape s} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_partit_ac0e1ab579b1ba4cbc274328796fe3f67}{$\sim$\+Partit}} ()
+\begin{DoxyCompactList}\small\item\em Destructora per defecte. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_partit_a9076cd635c0f8199d855560f92122572}{escriure\+\_\+a}} (int x)
+\begin{DoxyCompactList}\small\item\em Guarda la posició relativa en el rànking del torneig on s\textquotesingle{}ha disputat el partit del jugador arbitrari {\itshape a} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_partit_a4042774952fdf21a6aaae486dd7f9570}{escriure\+\_\+b}} (int x)
+\begin{DoxyCompactList}\small\item\em Guarda la posició relativa en el rànking del torneig on s\textquotesingle{}ha disputat el partit del jugador arbitrari {\itshape b} \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_partit_adea8daef3cf1174c0e824a84b6eb8389}{consultar\+\_\+guanyador}} ()
+\begin{DoxyCompactList}\small\item\em Retorna la posició relativa en el rànking del torneig on s\textquotesingle{}ha disputat el partit del guanyador del partit. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_partit_ad06770cba0f499d5dd598b6dd1a047b6}{consultar\+\_\+perdedor}} ()
+\begin{DoxyCompactList}\small\item\em Retorna la posició relativa en el rànking del torneig on s\textquotesingle{}ha disputat el partit del perdedor del partit. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_partit_a7132df3dd0d6234f08b5bf1255b551cd}{consultar\+\_\+a}} ()
+\begin{DoxyCompactList}\small\item\em Retorna la posició relativa en el rànking del torneig on s\textquotesingle{}ha disputat el partit del jugador {\itshape a} \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_partit_ac3cf7cc67eefedb85b46e0768b593c0c}{consultar\+\_\+b}} ()
+\begin{DoxyCompactList}\small\item\em Retorna la posició relativa en el rànking del torneig on s\textquotesingle{}ha disputat el partit del jugador {\itshape b} \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_partit_aa07406d615f8d304a4aa4b0fe1a054b5}{consultar\+\_\+resultats}} ()
+\begin{DoxyCompactList}\small\item\em Retorna un string representant el resultat del partit. \end{DoxyCompactList}\item 
+pair$<$ int, int $>$ \mbox{\hyperlink{class_partit_ad68b13af9d7f165c550cc8b119a74864}{consultar\+\_\+partits\+\_\+a}} ()
+\begin{DoxyCompactList}\small\item\em Retorna els partits guanyats i perduts del jugador {\itshape a} \end{DoxyCompactList}\item 
+pair$<$ int, int $>$ \mbox{\hyperlink{class_partit_adfec3094149e91b2ab64ce03b1284081}{consultar\+\_\+partits\+\_\+b}} ()
+\begin{DoxyCompactList}\small\item\em Retorna els partits guanyats i perduts del jugador {\itshape b} \end{DoxyCompactList}\item 
+pair$<$ int, int $>$ \mbox{\hyperlink{class_partit_a2d6533b71e6a7fd7d20ebece14347f96}{consultar\+\_\+sets\+\_\+a}} ()
+\begin{DoxyCompactList}\small\item\em Retorna els sets guanyats i perduts del jugador {\itshape a} \end{DoxyCompactList}\item 
+pair$<$ int, int $>$ \mbox{\hyperlink{class_partit_a2597f4f0d8827e67c18dd258ce5450ec}{consultar\+\_\+sets\+\_\+b}} ()
+\begin{DoxyCompactList}\small\item\em Retorna els sets guanyats i perduts del jugador {\itshape b} \end{DoxyCompactList}\item 
+pair$<$ int, int $>$ \mbox{\hyperlink{class_partit_a1ead80fd4291342fd34bd960911e0919}{consultar\+\_\+jocs\+\_\+a}} ()
+\begin{DoxyCompactList}\small\item\em Retorna els jocs guanyats i perduts del jugador {\itshape a} \end{DoxyCompactList}\item 
+pair$<$ int, int $>$ \mbox{\hyperlink{class_partit_a3f0f54c93ff85554e2b92d72135a75bf}{consultar\+\_\+jocs\+\_\+b}} ()
+\begin{DoxyCompactList}\small\item\em Retorna els jocs guanyats i perduts del jugador {\itshape b} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes Privats}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_partit_a7731fc3c7726bbea064e86177c694d6b}{upset}} ()
+\begin{DoxyCompactList}\small\item\em Retorna si el jugador {\itshape b} ha guanyat al jugador {\itshape a} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributs Privats}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_partit_a3d25d4ef01c7047872c33d055b471309}{resultats}}
+\item 
+pair$<$ int, int $>$ \mbox{\hyperlink{class_partit_a5e0d317c9b8033dd63dca369e8e9c645}{p\+\_\+a}}
+\item 
+pair$<$ int, int $>$ \mbox{\hyperlink{class_partit_a77f70e22c523792690445a8467213b48}{p\+\_\+b}}
+\item 
+pair$<$ int, int $>$ \mbox{\hyperlink{class_partit_a38df6dac4eaf46e401f6eb82a1eb86e4}{s\+\_\+a}}
+\item 
+pair$<$ int, int $>$ \mbox{\hyperlink{class_partit_af7aab16150fd3dde261fd0e988d62a11}{s\+\_\+b}}
+\item 
+pair$<$ int, int $>$ \mbox{\hyperlink{class_partit_a23d650178a77cba286cf6dd2062a350e}{j\+\_\+a}}
+\item 
+pair$<$ int, int $>$ \mbox{\hyperlink{class_partit_ab17b1ef4e068e8c64fd1026d2f96572a}{j\+\_\+b}}
+\item 
+int \mbox{\hyperlink{class_partit_a62e058b04085e59ae88ef25e420335e6}{a}}
+\item 
+int \mbox{\hyperlink{class_partit_af33dc3dac6db87d5374be25c4919772a}{b}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+
+
+Definició a la línia 13 del fitxer Partit.\+hh.
+
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_partit_a80beaa342d3415e7bfc33319dbe302bf}\label{class_partit_a80beaa342d3415e7bfc33319dbe302bf}} 
+\index{Partit@{Partit}!Partit@{Partit}}
+\index{Partit@{Partit}!Partit@{Partit}}
+\doxysubsubsection{\texorpdfstring{Partit()}{Partit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Partit\+::\+Partit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructora per defecte. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el paràmetre implícit és un partit que no s\textquotesingle{}ha realitzat 
+\end{DoxyPostcond}
+
+
+Definició a la línia 6 del fitxer Partit.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6                \{}
+\DoxyCodeLine{7   \mbox{\hyperlink{class_partit_a3d25d4ef01c7047872c33d055b471309}{resultats}} = \textcolor{stringliteral}{""};}
+\DoxyCodeLine{8 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_partit_aee6691b56de92ac767b692070bd69523}\label{class_partit_aee6691b56de92ac767b692070bd69523}} 
+\index{Partit@{Partit}!Partit@{Partit}}
+\index{Partit@{Partit}!Partit@{Partit}}
+\doxysubsubsection{\texorpdfstring{Partit()}{Partit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Partit\+::\+Partit (\begin{DoxyParamCaption}\item[{const string \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Constructora a partir del resultat d\textquotesingle{}un partit, representat per {\itshape s} 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape s.\+size()} és 3, 7 o 11, i les seves posicions parells contenen caracters numerals 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+s\textquotesingle{}ha guardat tota la informació referent al partit entre dos jugadors arbitraris {\itshape a} i {\itshape b}\+: qui ha guanyat el partit i els sets i jocs guanyats i perduts per cada jugador 
+\end{DoxyPostcond}
+
+
+Definició a la línia 10 del fitxer Partit.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10                               \{}
+\DoxyCodeLine{11   \mbox{\hyperlink{class_partit_a3d25d4ef01c7047872c33d055b471309}{resultats}} = s;}
+\DoxyCodeLine{12   \textcolor{keywordflow}{if} (s.size() == 3) \{}
+\DoxyCodeLine{13     \mbox{\hyperlink{class_partit_a5e0d317c9b8033dd63dca369e8e9c645}{p\_a}} = make\_pair(s[0] -\/ \textcolor{charliteral}{'0'}, s[2] -\/ \textcolor{charliteral}{'0'});}
+\DoxyCodeLine{14     \mbox{\hyperlink{class_partit_a77f70e22c523792690445a8467213b48}{p\_b}} = make\_pair(s[2] -\/ \textcolor{charliteral}{'0'}, s[0] -\/ \textcolor{charliteral}{'0'});}
+\DoxyCodeLine{15     \mbox{\hyperlink{class_partit_a38df6dac4eaf46e401f6eb82a1eb86e4}{s\_a}} = \mbox{\hyperlink{class_partit_af7aab16150fd3dde261fd0e988d62a11}{s\_b}} = \mbox{\hyperlink{class_partit_a23d650178a77cba286cf6dd2062a350e}{j\_a}} = \mbox{\hyperlink{class_partit_ab17b1ef4e068e8c64fd1026d2f96572a}{j\_b}} = make\_pair(0, 0);}
+\DoxyCodeLine{16   \}}
+\DoxyCodeLine{17   \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_partit_a38df6dac4eaf46e401f6eb82a1eb86e4}{s\_a}} = \mbox{\hyperlink{class_partit_af7aab16150fd3dde261fd0e988d62a11}{s\_b}} = \mbox{\hyperlink{class_partit_a23d650178a77cba286cf6dd2062a350e}{j\_a}} = \mbox{\hyperlink{class_partit_ab17b1ef4e068e8c64fd1026d2f96572a}{j\_b}} = make\_pair(0, 0);}
+\DoxyCodeLine{19     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < s.size(); i += 4) \{}
+\DoxyCodeLine{20       \textcolor{keywordtype}{int} \mbox{\hyperlink{class_partit_a62e058b04085e59ae88ef25e420335e6}{a}} = s[i];}
+\DoxyCodeLine{21       \textcolor{keywordtype}{int} \mbox{\hyperlink{class_partit_af33dc3dac6db87d5374be25c4919772a}{b}} = s[i + 2];}
+\DoxyCodeLine{22       \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_partit_a62e058b04085e59ae88ef25e420335e6}{a}} > \mbox{\hyperlink{class_partit_af33dc3dac6db87d5374be25c4919772a}{b}}) \{}
+\DoxyCodeLine{23         ++\mbox{\hyperlink{class_partit_a38df6dac4eaf46e401f6eb82a1eb86e4}{s\_a}}.first;}
+\DoxyCodeLine{24         ++\mbox{\hyperlink{class_partit_af7aab16150fd3dde261fd0e988d62a11}{s\_b}}.second;}
+\DoxyCodeLine{25       \}}
+\DoxyCodeLine{26       \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{27         ++\mbox{\hyperlink{class_partit_a38df6dac4eaf46e401f6eb82a1eb86e4}{s\_a}}.second;}
+\DoxyCodeLine{28         ++\mbox{\hyperlink{class_partit_af7aab16150fd3dde261fd0e988d62a11}{s\_b}}.first;}
+\DoxyCodeLine{29       \}}
+\DoxyCodeLine{30       \mbox{\hyperlink{class_partit_a23d650178a77cba286cf6dd2062a350e}{j\_a}}.first += \mbox{\hyperlink{class_partit_a62e058b04085e59ae88ef25e420335e6}{a}} -\/ \textcolor{charliteral}{'0'};}
+\DoxyCodeLine{31       \mbox{\hyperlink{class_partit_a23d650178a77cba286cf6dd2062a350e}{j\_a}}.second += \mbox{\hyperlink{class_partit_af33dc3dac6db87d5374be25c4919772a}{b}} -\/ \textcolor{charliteral}{'0'};}
+\DoxyCodeLine{32       \mbox{\hyperlink{class_partit_ab17b1ef4e068e8c64fd1026d2f96572a}{j\_b}}.first += \mbox{\hyperlink{class_partit_af33dc3dac6db87d5374be25c4919772a}{b}} -\/ \textcolor{charliteral}{'0'};}
+\DoxyCodeLine{33       \mbox{\hyperlink{class_partit_ab17b1ef4e068e8c64fd1026d2f96572a}{j\_b}}.second += \mbox{\hyperlink{class_partit_a62e058b04085e59ae88ef25e420335e6}{a}} -\/ \textcolor{charliteral}{'0'};}
+\DoxyCodeLine{34     \}}
+\DoxyCodeLine{35     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_partit_a38df6dac4eaf46e401f6eb82a1eb86e4}{s\_a}}.first == 2) \{}
+\DoxyCodeLine{36       \mbox{\hyperlink{class_partit_a5e0d317c9b8033dd63dca369e8e9c645}{p\_a}} = make\_pair(1, 0);}
+\DoxyCodeLine{37       \mbox{\hyperlink{class_partit_a77f70e22c523792690445a8467213b48}{p\_b}} = make\_pair(0, 1);}
+\DoxyCodeLine{38     \}}
+\DoxyCodeLine{39     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{40       \mbox{\hyperlink{class_partit_a5e0d317c9b8033dd63dca369e8e9c645}{p\_a}} = make\_pair(0, 1);}
+\DoxyCodeLine{41       \mbox{\hyperlink{class_partit_a77f70e22c523792690445a8467213b48}{p\_b}} = make\_pair(1, 0);}
+\DoxyCodeLine{42     \}}
+\DoxyCodeLine{43   \}}
+\DoxyCodeLine{44 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_partit_ac0e1ab579b1ba4cbc274328796fe3f67}\label{class_partit_ac0e1ab579b1ba4cbc274328796fe3f67}} 
+\index{Partit@{Partit}!````~Partit@{$\sim$Partit}}
+\index{````~Partit@{$\sim$Partit}!Partit@{Partit}}
+\doxysubsubsection{\texorpdfstring{$\sim$Partit()}{~Partit()}}
+{\footnotesize\ttfamily Partit\+::$\sim$\+Partit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructora per defecte. 
+
+
+
+Definició a la línia 46 del fitxer Partit.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{46 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_partit_a7731fc3c7726bbea064e86177c694d6b}\label{class_partit_a7731fc3c7726bbea064e86177c694d6b}} 
+\index{Partit@{Partit}!upset@{upset}}
+\index{upset@{upset}!Partit@{Partit}}
+\doxysubsubsection{\texorpdfstring{upset()}{upset()}}
+{\footnotesize\ttfamily bool Partit\+::upset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Retorna si el jugador {\itshape b} ha guanyat al jugador {\itshape a} 
+
+\begin{DoxyPrecond}{Precondició}
+el paràmetre implícit està inicialitzat completament 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+retorna cert en cas que {\itshape b} hagi guanyat el partit, i fals altrament 
+\end{DoxyPostcond}
+
+
+Definició a la línia 56 del fitxer Partit.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{56                    \{}
+\DoxyCodeLine{57   \textcolor{keywordflow}{return} \mbox{\hyperlink{class_partit_a5e0d317c9b8033dd63dca369e8e9c645}{p\_a}}.first < \mbox{\hyperlink{class_partit_a5e0d317c9b8033dd63dca369e8e9c645}{p\_a}}.second;}
+\DoxyCodeLine{58 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_partit_a9076cd635c0f8199d855560f92122572}\label{class_partit_a9076cd635c0f8199d855560f92122572}} 
+\index{Partit@{Partit}!escriure\_a@{escriure\_a}}
+\index{escriure\_a@{escriure\_a}!Partit@{Partit}}
+\doxysubsubsection{\texorpdfstring{escriure\_a()}{escriure\_a()}}
+{\footnotesize\ttfamily void Partit\+::escriure\+\_\+a (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Guarda la posició relativa en el rànking del torneig on s\textquotesingle{}ha disputat el partit del jugador arbitrari {\itshape a} 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape x} $>$= 1 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+s\textquotesingle{}ha definit {\itshape x} com la posició relativa en el rànking del torneig on s\textquotesingle{}ha disputat el partit del jugador {\itshape a} 
+\end{DoxyPostcond}
+
+
+Definició a la línia 48 del fitxer Partit.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{48                              \{}
+\DoxyCodeLine{49   \mbox{\hyperlink{class_partit_a62e058b04085e59ae88ef25e420335e6}{a}} = x;}
+\DoxyCodeLine{50 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_partit_a4042774952fdf21a6aaae486dd7f9570}\label{class_partit_a4042774952fdf21a6aaae486dd7f9570}} 
+\index{Partit@{Partit}!escriure\_b@{escriure\_b}}
+\index{escriure\_b@{escriure\_b}!Partit@{Partit}}
+\doxysubsubsection{\texorpdfstring{escriure\_b()}{escriure\_b()}}
+{\footnotesize\ttfamily void Partit\+::escriure\+\_\+b (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Guarda la posició relativa en el rànking del torneig on s\textquotesingle{}ha disputat el partit del jugador arbitrari {\itshape b} 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape x} $>$= 1 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+s\textquotesingle{}ha definit {\itshape x} com la posició relativa en el rànking del torneig on s\textquotesingle{}ha disputat el partit del jugador {\itshape b} 
+\end{DoxyPostcond}
+
+
+Definició a la línia 52 del fitxer Partit.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{52                              \{}
+\DoxyCodeLine{53   \mbox{\hyperlink{class_partit_af33dc3dac6db87d5374be25c4919772a}{b}} = x;}
+\DoxyCodeLine{54 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_partit_adea8daef3cf1174c0e824a84b6eb8389}\label{class_partit_adea8daef3cf1174c0e824a84b6eb8389}} 
+\index{Partit@{Partit}!consultar\_guanyador@{consultar\_guanyador}}
+\index{consultar\_guanyador@{consultar\_guanyador}!Partit@{Partit}}
+\doxysubsubsection{\texorpdfstring{consultar\_guanyador()}{consultar\_guanyador()}}
+{\footnotesize\ttfamily int Partit\+::consultar\+\_\+guanyador (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna la posició relativa en el rànking del torneig on s\textquotesingle{}ha disputat el partit del guanyador del partit. 
+
+\begin{DoxyPrecond}{Precondició}
+les posicions relatives dels dos jugadors del partit han estat definides 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+retorna la posició relativa en el rànking del torneig on s\textquotesingle{}ha disputat el partit del guanyador del partit 
+\end{DoxyPostcond}
+
+
+Definició a la línia 60 del fitxer Partit.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60                                 \{}
+\DoxyCodeLine{61   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_partit_a7731fc3c7726bbea064e86177c694d6b}{upset}}()) \textcolor{keywordflow}{return} \mbox{\hyperlink{class_partit_af33dc3dac6db87d5374be25c4919772a}{b}};}
+\DoxyCodeLine{62   \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \mbox{\hyperlink{class_partit_a62e058b04085e59ae88ef25e420335e6}{a}};}
+\DoxyCodeLine{63 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_partit_ad06770cba0f499d5dd598b6dd1a047b6}\label{class_partit_ad06770cba0f499d5dd598b6dd1a047b6}} 
+\index{Partit@{Partit}!consultar\_perdedor@{consultar\_perdedor}}
+\index{consultar\_perdedor@{consultar\_perdedor}!Partit@{Partit}}
+\doxysubsubsection{\texorpdfstring{consultar\_perdedor()}{consultar\_perdedor()}}
+{\footnotesize\ttfamily int Partit\+::consultar\+\_\+perdedor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna la posició relativa en el rànking del torneig on s\textquotesingle{}ha disputat el partit del perdedor del partit. 
+
+\begin{DoxyPrecond}{Precondició}
+les posicions relatives dels dos jugadors del partit han estat definides 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+retorna la posició relativa en el rànking del torneig on s\textquotesingle{}ha disputat el partit del perdedor del partit 
+\end{DoxyPostcond}
+
+
+Definició a la línia 65 del fitxer Partit.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{65                                \{}
+\DoxyCodeLine{66   \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_partit_a7731fc3c7726bbea064e86177c694d6b}{upset}}()) \textcolor{keywordflow}{return} \mbox{\hyperlink{class_partit_a62e058b04085e59ae88ef25e420335e6}{a}};}
+\DoxyCodeLine{67   \textcolor{keywordflow}{else} \textcolor{keywordflow}{return} \mbox{\hyperlink{class_partit_af33dc3dac6db87d5374be25c4919772a}{b}};}
+\DoxyCodeLine{68 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_partit_a7132df3dd0d6234f08b5bf1255b551cd}\label{class_partit_a7132df3dd0d6234f08b5bf1255b551cd}} 
+\index{Partit@{Partit}!consultar\_a@{consultar\_a}}
+\index{consultar\_a@{consultar\_a}!Partit@{Partit}}
+\doxysubsubsection{\texorpdfstring{consultar\_a()}{consultar\_a()}}
+{\footnotesize\ttfamily int Partit\+::consultar\+\_\+a (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna la posició relativa en el rànking del torneig on s\textquotesingle{}ha disputat el partit del jugador {\itshape a} 
+
+\begin{DoxyPrecond}{Precondició}
+la posició relativa del jugador {\itshape a} ha estat definida 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+retorna la posició relativa en el rànking del torneig on s\textquotesingle{}ha disputat el partit del jugador {\itshape a} 
+\end{DoxyPostcond}
+
+
+Definició a la línia 70 del fitxer Partit.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{70                         \{}
+\DoxyCodeLine{71   \textcolor{keywordflow}{return} \mbox{\hyperlink{class_partit_a62e058b04085e59ae88ef25e420335e6}{a}};}
+\DoxyCodeLine{72 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_partit_ac3cf7cc67eefedb85b46e0768b593c0c}\label{class_partit_ac3cf7cc67eefedb85b46e0768b593c0c}} 
+\index{Partit@{Partit}!consultar\_b@{consultar\_b}}
+\index{consultar\_b@{consultar\_b}!Partit@{Partit}}
+\doxysubsubsection{\texorpdfstring{consultar\_b()}{consultar\_b()}}
+{\footnotesize\ttfamily int Partit\+::consultar\+\_\+b (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna la posició relativa en el rànking del torneig on s\textquotesingle{}ha disputat el partit del jugador {\itshape b} 
+
+\begin{DoxyPrecond}{Precondició}
+la posició relativa del jugador {\itshape b} ha estat definida 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+retorna la posició relativa en el rànking del torneig on s\textquotesingle{}ha disputat el partit del jugador {\itshape b} 
+\end{DoxyPostcond}
+
+
+Definició a la línia 74 del fitxer Partit.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{74                         \{}
+\DoxyCodeLine{75   \textcolor{keywordflow}{return} \mbox{\hyperlink{class_partit_af33dc3dac6db87d5374be25c4919772a}{b}};}
+\DoxyCodeLine{76 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_partit_aa07406d615f8d304a4aa4b0fe1a054b5}\label{class_partit_aa07406d615f8d304a4aa4b0fe1a054b5}} 
+\index{Partit@{Partit}!consultar\_resultats@{consultar\_resultats}}
+\index{consultar\_resultats@{consultar\_resultats}!Partit@{Partit}}
+\doxysubsubsection{\texorpdfstring{consultar\_resultats()}{consultar\_resultats()}}
+{\footnotesize\ttfamily string Partit\+::consultar\+\_\+resultats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna un string representant el resultat del partit. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+retorna un string representant el resultat del partit 
+\end{DoxyPostcond}
+
+
+Definició a la línia 78 del fitxer Partit.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{78                                    \{}
+\DoxyCodeLine{79   \textcolor{keywordflow}{return} \mbox{\hyperlink{class_partit_a3d25d4ef01c7047872c33d055b471309}{resultats}};}
+\DoxyCodeLine{80 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_partit_ad68b13af9d7f165c550cc8b119a74864}\label{class_partit_ad68b13af9d7f165c550cc8b119a74864}} 
+\index{Partit@{Partit}!consultar\_partits\_a@{consultar\_partits\_a}}
+\index{consultar\_partits\_a@{consultar\_partits\_a}!Partit@{Partit}}
+\doxysubsubsection{\texorpdfstring{consultar\_partits\_a()}{consultar\_partits\_a()}}
+{\footnotesize\ttfamily pair$<$ int, int $>$ Partit\+::consultar\+\_\+partits\+\_\+a (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna els partits guanyats i perduts del jugador {\itshape a} 
+
+\begin{DoxyPrecond}{Precondició}
+el paràmetre implícit està inicialitzat 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+retorna un parell d\textquotesingle{}enters representant els partits guanyats i perduts del jugador {\itshape a} 
+\end{DoxyPostcond}
+
+
+Definició a la línia 82 del fitxer Partit.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{82                                            \{}
+\DoxyCodeLine{83   \textcolor{keywordflow}{return} \mbox{\hyperlink{class_partit_a5e0d317c9b8033dd63dca369e8e9c645}{p\_a}};}
+\DoxyCodeLine{84 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_partit_adfec3094149e91b2ab64ce03b1284081}\label{class_partit_adfec3094149e91b2ab64ce03b1284081}} 
+\index{Partit@{Partit}!consultar\_partits\_b@{consultar\_partits\_b}}
+\index{consultar\_partits\_b@{consultar\_partits\_b}!Partit@{Partit}}
+\doxysubsubsection{\texorpdfstring{consultar\_partits\_b()}{consultar\_partits\_b()}}
+{\footnotesize\ttfamily pair$<$ int, int $>$ Partit\+::consultar\+\_\+partits\+\_\+b (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna els partits guanyats i perduts del jugador {\itshape b} 
+
+\begin{DoxyPrecond}{Precondició}
+el paràmetre implícit està inicialitzat 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+retorna un parell d\textquotesingle{}enters representant els partits guanyats i perduts del jugador {\itshape b} 
+\end{DoxyPostcond}
+
+
+Definició a la línia 86 del fitxer Partit.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{86                                            \{}
+\DoxyCodeLine{87   \textcolor{keywordflow}{return} \mbox{\hyperlink{class_partit_a77f70e22c523792690445a8467213b48}{p\_b}};}
+\DoxyCodeLine{88 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_partit_a2d6533b71e6a7fd7d20ebece14347f96}\label{class_partit_a2d6533b71e6a7fd7d20ebece14347f96}} 
+\index{Partit@{Partit}!consultar\_sets\_a@{consultar\_sets\_a}}
+\index{consultar\_sets\_a@{consultar\_sets\_a}!Partit@{Partit}}
+\doxysubsubsection{\texorpdfstring{consultar\_sets\_a()}{consultar\_sets\_a()}}
+{\footnotesize\ttfamily pair$<$ int, int $>$ Partit\+::consultar\+\_\+sets\+\_\+a (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna els sets guanyats i perduts del jugador {\itshape a} 
+
+\begin{DoxyPrecond}{Precondició}
+el paràmetre implícit està inicialitzat 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+retorna un parell d\textquotesingle{}enters representant els sets guanyats i perduts del jugador {\itshape a} 
+\end{DoxyPostcond}
+
+
+Definició a la línia 90 del fitxer Partit.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{90                                         \{}
+\DoxyCodeLine{91   \textcolor{keywordflow}{return} \mbox{\hyperlink{class_partit_a38df6dac4eaf46e401f6eb82a1eb86e4}{s\_a}};}
+\DoxyCodeLine{92 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_partit_a2597f4f0d8827e67c18dd258ce5450ec}\label{class_partit_a2597f4f0d8827e67c18dd258ce5450ec}} 
+\index{Partit@{Partit}!consultar\_sets\_b@{consultar\_sets\_b}}
+\index{consultar\_sets\_b@{consultar\_sets\_b}!Partit@{Partit}}
+\doxysubsubsection{\texorpdfstring{consultar\_sets\_b()}{consultar\_sets\_b()}}
+{\footnotesize\ttfamily pair$<$ int, int $>$ Partit\+::consultar\+\_\+sets\+\_\+b (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna els sets guanyats i perduts del jugador {\itshape b} 
+
+\begin{DoxyPrecond}{Precondició}
+el paràmetre implícit està inicialitzat 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+retorna un parell d\textquotesingle{}enters representant els sets guanyats i perduts del jugador {\itshape b} 
+\end{DoxyPostcond}
+
+
+Definició a la línia 94 del fitxer Partit.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{94                                         \{}
+\DoxyCodeLine{95   \textcolor{keywordflow}{return} \mbox{\hyperlink{class_partit_af7aab16150fd3dde261fd0e988d62a11}{s\_b}};}
+\DoxyCodeLine{96 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_partit_a1ead80fd4291342fd34bd960911e0919}\label{class_partit_a1ead80fd4291342fd34bd960911e0919}} 
+\index{Partit@{Partit}!consultar\_jocs\_a@{consultar\_jocs\_a}}
+\index{consultar\_jocs\_a@{consultar\_jocs\_a}!Partit@{Partit}}
+\doxysubsubsection{\texorpdfstring{consultar\_jocs\_a()}{consultar\_jocs\_a()}}
+{\footnotesize\ttfamily pair$<$ int, int $>$ Partit\+::consultar\+\_\+jocs\+\_\+a (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna els jocs guanyats i perduts del jugador {\itshape a} 
+
+\begin{DoxyPrecond}{Precondició}
+el paràmetre implícit està inicialitzat 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+retorna un parell d\textquotesingle{}enters representant els jocs guanyats i perduts del jugador {\itshape a} 
+\end{DoxyPostcond}
+
+
+Definició a la línia 98 del fitxer Partit.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{98                                         \{}
+\DoxyCodeLine{99   \textcolor{keywordflow}{return} \mbox{\hyperlink{class_partit_a23d650178a77cba286cf6dd2062a350e}{j\_a}};}
+\DoxyCodeLine{100 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_partit_a3f0f54c93ff85554e2b92d72135a75bf}\label{class_partit_a3f0f54c93ff85554e2b92d72135a75bf}} 
+\index{Partit@{Partit}!consultar\_jocs\_b@{consultar\_jocs\_b}}
+\index{consultar\_jocs\_b@{consultar\_jocs\_b}!Partit@{Partit}}
+\doxysubsubsection{\texorpdfstring{consultar\_jocs\_b()}{consultar\_jocs\_b()}}
+{\footnotesize\ttfamily pair$<$ int, int $>$ Partit\+::consultar\+\_\+jocs\+\_\+b (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna els jocs guanyats i perduts del jugador {\itshape b} 
+
+\begin{DoxyPrecond}{Precondició}
+el paràmetre implícit està inicialitzat 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+retorna un parell d\textquotesingle{}enters representant els jocs guanyats i perduts del jugador {\itshape b} 
+\end{DoxyPostcond}
+
+
+Definició a la línia 102 del fitxer Partit.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{102                                         \{}
+\DoxyCodeLine{103   \textcolor{keywordflow}{return} \mbox{\hyperlink{class_partit_ab17b1ef4e068e8c64fd1026d2f96572a}{j\_b}};}
+\DoxyCodeLine{104 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentació de les Dades Membre}
+\mbox{\Hypertarget{class_partit_a3d25d4ef01c7047872c33d055b471309}\label{class_partit_a3d25d4ef01c7047872c33d055b471309}} 
+\index{Partit@{Partit}!resultats@{resultats}}
+\index{resultats@{resultats}!Partit@{Partit}}
+\doxysubsubsection{\texorpdfstring{resultats}{resultats}}
+{\footnotesize\ttfamily string Partit\+::resultats\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definició a la línia 17 del fitxer Partit.\+hh.
+
+\mbox{\Hypertarget{class_partit_a5e0d317c9b8033dd63dca369e8e9c645}\label{class_partit_a5e0d317c9b8033dd63dca369e8e9c645}} 
+\index{Partit@{Partit}!p\_a@{p\_a}}
+\index{p\_a@{p\_a}!Partit@{Partit}}
+\doxysubsubsection{\texorpdfstring{p\_a}{p\_a}}
+{\footnotesize\ttfamily pair$<$int, int$>$ Partit\+::p\+\_\+a\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definició a la línia 19 del fitxer Partit.\+hh.
+
+\mbox{\Hypertarget{class_partit_a77f70e22c523792690445a8467213b48}\label{class_partit_a77f70e22c523792690445a8467213b48}} 
+\index{Partit@{Partit}!p\_b@{p\_b}}
+\index{p\_b@{p\_b}!Partit@{Partit}}
+\doxysubsubsection{\texorpdfstring{p\_b}{p\_b}}
+{\footnotesize\ttfamily pair$<$int, int$>$ Partit\+::p\+\_\+b\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definició a la línia 20 del fitxer Partit.\+hh.
+
+\mbox{\Hypertarget{class_partit_a38df6dac4eaf46e401f6eb82a1eb86e4}\label{class_partit_a38df6dac4eaf46e401f6eb82a1eb86e4}} 
+\index{Partit@{Partit}!s\_a@{s\_a}}
+\index{s\_a@{s\_a}!Partit@{Partit}}
+\doxysubsubsection{\texorpdfstring{s\_a}{s\_a}}
+{\footnotesize\ttfamily pair$<$int, int$>$ Partit\+::s\+\_\+a\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definició a la línia 21 del fitxer Partit.\+hh.
+
+\mbox{\Hypertarget{class_partit_af7aab16150fd3dde261fd0e988d62a11}\label{class_partit_af7aab16150fd3dde261fd0e988d62a11}} 
+\index{Partit@{Partit}!s\_b@{s\_b}}
+\index{s\_b@{s\_b}!Partit@{Partit}}
+\doxysubsubsection{\texorpdfstring{s\_b}{s\_b}}
+{\footnotesize\ttfamily pair$<$int, int$>$ Partit\+::s\+\_\+b\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definició a la línia 22 del fitxer Partit.\+hh.
+
+\mbox{\Hypertarget{class_partit_a23d650178a77cba286cf6dd2062a350e}\label{class_partit_a23d650178a77cba286cf6dd2062a350e}} 
+\index{Partit@{Partit}!j\_a@{j\_a}}
+\index{j\_a@{j\_a}!Partit@{Partit}}
+\doxysubsubsection{\texorpdfstring{j\_a}{j\_a}}
+{\footnotesize\ttfamily pair$<$int, int$>$ Partit\+::j\+\_\+a\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definició a la línia 23 del fitxer Partit.\+hh.
+
+\mbox{\Hypertarget{class_partit_ab17b1ef4e068e8c64fd1026d2f96572a}\label{class_partit_ab17b1ef4e068e8c64fd1026d2f96572a}} 
+\index{Partit@{Partit}!j\_b@{j\_b}}
+\index{j\_b@{j\_b}!Partit@{Partit}}
+\doxysubsubsection{\texorpdfstring{j\_b}{j\_b}}
+{\footnotesize\ttfamily pair$<$int, int$>$ Partit\+::j\+\_\+b\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definició a la línia 24 del fitxer Partit.\+hh.
+
+\mbox{\Hypertarget{class_partit_a62e058b04085e59ae88ef25e420335e6}\label{class_partit_a62e058b04085e59ae88ef25e420335e6}} 
+\index{Partit@{Partit}!a@{a}}
+\index{a@{a}!Partit@{Partit}}
+\doxysubsubsection{\texorpdfstring{a}{a}}
+{\footnotesize\ttfamily int Partit\+::a\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definició a la línia 26 del fitxer Partit.\+hh.
+
+\mbox{\Hypertarget{class_partit_af33dc3dac6db87d5374be25c4919772a}\label{class_partit_af33dc3dac6db87d5374be25c4919772a}} 
+\index{Partit@{Partit}!b@{b}}
+\index{b@{b}!Partit@{Partit}}
+\doxysubsubsection{\texorpdfstring{b}{b}}
+{\footnotesize\ttfamily int Partit\+::b\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definició a la línia 27 del fitxer Partit.\+hh.
+
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir dels següents fitxers\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_partit_8hh}{Partit.\+hh}}\item 
+\mbox{\hyperlink{_partit_8cc}{Partit.\+cc}}\end{DoxyCompactItemize}

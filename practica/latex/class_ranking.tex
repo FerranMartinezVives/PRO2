@@ -1,0 +1,606 @@
+\hypertarget{class_ranking}{}\doxysection{Referència de la Classe Ranking}
+\label{class_ranking}\index{Ranking@{Ranking}}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ranking_a7b1142b455d06f3d455d796ed329118f}{Ranking}} ()
+\begin{DoxyCompactList}\small\item\em Constructora per defecte. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ranking_a1639f112b48967caf38e1ab4be57b203}{Ranking}} (int num\+\_\+jgds)
+\begin{DoxyCompactList}\small\item\em Constructora a partir del nombre de jugadors. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ranking_aa350c65acea82ec0ac42ec80db8bc00f}{$\sim$\+Ranking}} ()
+\begin{DoxyCompactList}\small\item\em Destructora per defecte. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ranking_a5fb3646eb86e5d01b1f61266e9bbe8c6}{alta\+\_\+jugador}} (const string \&p)
+\begin{DoxyCompactList}\small\item\em Afegeix un amb nom {\itshape p} jugador al rànking i la llista del paràmetre implícit. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ranking_ab63d27dc5a053748c2f39678d4a619c0}{baixa\+\_\+jugador}} (const string \&j)
+\begin{DoxyCompactList}\small\item\em Esborra del rànking i la llista del paràmetre implícit el jugador amb nom {\itshape j} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ranking_ab00377801bf2969af81146c2a050f6fb}{ordenar\+\_\+ranking}} ()
+\begin{DoxyCompactList}\small\item\em Ordena en ordre creixent de puntuació els jugadors del rànking. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ranking_a3cafaca9c780db230bf52f87c89c4722}{actualitzar\+\_\+partits}} (const string \&j, const pair$<$ int, int $>$ \&partits)
+\begin{DoxyCompactList}\small\item\em Actualitza les estadítiques \char`\"{}partits guanyats\char`\"{} i \char`\"{}partits perduts\char`\"{} del jugador amb nom {\itshape j} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ranking_a8ae92fc20d1284ed16b8b0f64ec9cc62}{actualitzar\+\_\+sets}} (const string \&j, const pair$<$ int, int $>$ \&sets)
+\begin{DoxyCompactList}\small\item\em Actualitza les estadítiques \char`\"{}sets guanyats\char`\"{} i \char`\"{}sets perduts\char`\"{} del jugador amb nom {\itshape j} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ranking_a7dce29cb261b844884eb41fc4e68556b}{actualitzar\+\_\+jocs}} (const string \&j, const pair$<$ int, int $>$ \&jocs)
+\begin{DoxyCompactList}\small\item\em Actualitza les estadítiques \char`\"{}jocs guanyats\char`\"{} i \char`\"{}jocs perduts\char`\"{} del jugador amb nom {\itshape j} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ranking_a0655d4f2b9e8db5c2c5bd74197ed5b30}{actualitzar\+\_\+punts}} (const string \&j, int x)
+\begin{DoxyCompactList}\small\item\em Actualitza la puntuació del jugador amb nom {\itshape j} segons el valor de {\itshape x} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ranking_a1301d78fa35b7a57c10f890be6a5e724}{actualitzar\+\_\+tornejos}} (const string \&j, int x)
+\begin{DoxyCompactList}\small\item\em Augmenta l\textquotesingle{}estadística \char`\"{}tornejos disputats\char`\"{} del jugador amb nom {\itshape j} segons el valor de {\itshape x} \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_ranking_ab8432ae2eecb7bbb653a94bbe964d32c}{mida}} ()
+\begin{DoxyCompactList}\small\item\em Retorna el número de jugadors que conté la llista/rànking del paràmetre implícit. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_ranking_a43fcf8beb2a3f1c1714e1ffbf61135e4}{buscar\+\_\+posicio}} (int x)
+\begin{DoxyCompactList}\small\item\em Retorna el nom del jugador a la posició x del rànking. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ranking_a7f68c4f16408337d955063e16d4c18f8}{imprimeix\+\_\+ranking}} ()
+\begin{DoxyCompactList}\small\item\em Imprimeix en ordre la posició en el rànking, el nom i la puntuació de tots els jugadors. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ranking_a9bf1ea8615dedd1cfa9ab820454df01d}{imprimeix\+\_\+jugadors}} ()
+\begin{DoxyCompactList}\small\item\em Imprimeix per ordre alfabètic el nom, la posició en el rànking, la puntuació i totes les estadístiques dels jugadors de la llista del paràmetre implícit. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ranking_a5484f780b1d031a64bcce44d7cb6a768}{imprimeix\+\_\+jugador}} (const string \&j)
+\begin{DoxyCompactList}\small\item\em Imprimeix el nom, la posició en el rànking, la puntuació i totes les estadístiques del jugador amb nom {\itshape j} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes Privats Estàtics}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_ranking_a6e33f856ed64f8b0a27338f7f54d647b}{ordre\+\_\+ranking}} (const map$<$ string, \mbox{\hyperlink{class_jugador}{Jugador}} $>$\+::iterator \&it1, const map$<$ string, \mbox{\hyperlink{class_jugador}{Jugador}} $>$\+::iterator \&it2)
+\begin{DoxyCompactList}\small\item\em Retorna cert si la puntuació del jugador apuntat per {\itshape it1} és major que la del jugador apuntat per {\itshape it2}, fals altrament. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributs Privats}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, \mbox{\hyperlink{class_jugador}{Jugador}} $>$ \mbox{\hyperlink{class_ranking_a599ec15f95397565e802ae9d8e144543}{llista}}
+\item 
+vector$<$ map$<$ string, \mbox{\hyperlink{class_jugador}{Jugador}} $>$\+::iterator $>$ \mbox{\hyperlink{class_ranking_ab63addb21d82ffcbbf89ff1ed4927054}{ranking}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+
+
+Definició a la línia 16 del fitxer Ranking.\+hh.
+
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_ranking_a7b1142b455d06f3d455d796ed329118f}\label{class_ranking_a7b1142b455d06f3d455d796ed329118f}} 
+\index{Ranking@{Ranking}!Ranking@{Ranking}}
+\index{Ranking@{Ranking}!Ranking@{Ranking}}
+\doxysubsubsection{\texorpdfstring{Ranking()}{Ranking()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Ranking\+::\+Ranking (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructora per defecte. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el paràmetre implícit té un rànking i una llista de jugadors buits 
+\end{DoxyPostcond}
+
+
+Definició a la línia 7 del fitxer Ranking.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7                  \{}
+\DoxyCodeLine{8   \mbox{\hyperlink{class_ranking_a599ec15f95397565e802ae9d8e144543}{llista}} = map<string, Jugador>();}
+\DoxyCodeLine{9   \mbox{\hyperlink{class_ranking_ab63addb21d82ffcbbf89ff1ed4927054}{ranking}} = vector< map<string, Jugador>::iterator >(0);}
+\DoxyCodeLine{10 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ranking_a1639f112b48967caf38e1ab4be57b203}\label{class_ranking_a1639f112b48967caf38e1ab4be57b203}} 
+\index{Ranking@{Ranking}!Ranking@{Ranking}}
+\index{Ranking@{Ranking}!Ranking@{Ranking}}
+\doxysubsubsection{\texorpdfstring{Ranking()}{Ranking()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Ranking\+::\+Ranking (\begin{DoxyParamCaption}\item[{int}]{num\+\_\+jgds }\end{DoxyParamCaption})}
+
+
+
+Constructora a partir del nombre de jugadors. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape num\+\_\+jgds} $>$= 0, al canal d\textquotesingle{}entrada hi ha {\itshape num\+\_\+jgds} strings no repetits 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+el paràmetre implícit té un rànking i una llista ordenada alfabèticament de jugadors creats a partir dels strings del canal d\textquotesingle{}entrada, tots amb puntuació i estadístiques a 0 
+\end{DoxyPostcond}
+
+
+Definició a la línia 12 del fitxer Ranking.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{12                              \{}
+\DoxyCodeLine{13   \mbox{\hyperlink{class_ranking_a599ec15f95397565e802ae9d8e144543}{llista}} = map<string, Jugador>();}
+\DoxyCodeLine{14   \mbox{\hyperlink{class_ranking_ab63addb21d82ffcbbf89ff1ed4927054}{ranking}} = vector< map<string, Jugador>::iterator >(0);}
+\DoxyCodeLine{15   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < num\_jgds; ++i) \{}
+\DoxyCodeLine{16     \textcolor{keywordtype}{string} n;}
+\DoxyCodeLine{17     cin >> n;}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_jugador}{Jugador}} j(n);}
+\DoxyCodeLine{19     pair< map<string, Jugador>::iterator, \textcolor{keywordtype}{bool} > p;}
+\DoxyCodeLine{20     p = \mbox{\hyperlink{class_ranking_a599ec15f95397565e802ae9d8e144543}{llista}}.insert(make\_pair(n, j));}
+\DoxyCodeLine{21     \mbox{\hyperlink{class_ranking_ab63addb21d82ffcbbf89ff1ed4927054}{ranking}}.push\_back(p.first);}
+\DoxyCodeLine{22   \}}
+\DoxyCodeLine{23 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ranking_aa350c65acea82ec0ac42ec80db8bc00f}\label{class_ranking_aa350c65acea82ec0ac42ec80db8bc00f}} 
+\index{Ranking@{Ranking}!````~Ranking@{$\sim$Ranking}}
+\index{````~Ranking@{$\sim$Ranking}!Ranking@{Ranking}}
+\doxysubsubsection{\texorpdfstring{$\sim$Ranking()}{~Ranking()}}
+{\footnotesize\ttfamily Ranking\+::$\sim$\+Ranking (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructora per defecte. 
+
+
+
+Definició a la línia 25 del fitxer Ranking.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_ranking_a6e33f856ed64f8b0a27338f7f54d647b}\label{class_ranking_a6e33f856ed64f8b0a27338f7f54d647b}} 
+\index{Ranking@{Ranking}!ordre\_ranking@{ordre\_ranking}}
+\index{ordre\_ranking@{ordre\_ranking}!Ranking@{Ranking}}
+\doxysubsubsection{\texorpdfstring{ordre\_ranking()}{ordre\_ranking()}}
+{\footnotesize\ttfamily bool Ranking\+::ordre\+\_\+ranking (\begin{DoxyParamCaption}\item[{const map$<$ string, \mbox{\hyperlink{class_jugador}{Jugador}} $>$\+::iterator \&}]{it1,  }\item[{const map$<$ string, \mbox{\hyperlink{class_jugador}{Jugador}} $>$\+::iterator \&}]{it2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Retorna cert si la puntuació del jugador apuntat per {\itshape it1} és major que la del jugador apuntat per {\itshape it2}, fals altrament. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape it1} i {\itshape it2} apunten a jugadors de la llista del paràmetre implícit 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+retorna cert si la puntuació del jugador apuntat per {\itshape it1} és major que la del jugador apuntat per {\itshape it2}, fals altrament 
+\end{DoxyPostcond}
+
+
+Definició a la línia 133 del fitxer Ranking.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{133                                                                                                             \{}
+\DoxyCodeLine{134   \textcolor{keywordflow}{return} it1-\/>second.consultar\_puntuacio() > it2-\/>second.consultar\_puntuacio();}
+\DoxyCodeLine{135 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ranking_a5fb3646eb86e5d01b1f61266e9bbe8c6}\label{class_ranking_a5fb3646eb86e5d01b1f61266e9bbe8c6}} 
+\index{Ranking@{Ranking}!alta\_jugador@{alta\_jugador}}
+\index{alta\_jugador@{alta\_jugador}!Ranking@{Ranking}}
+\doxysubsubsection{\texorpdfstring{alta\_jugador()}{alta\_jugador()}}
+{\footnotesize\ttfamily bool Ranking\+::alta\+\_\+jugador (\begin{DoxyParamCaption}\item[{const string \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Afegeix un amb nom {\itshape p} jugador al rànking i la llista del paràmetre implícit. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape p} no és buit 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+si no hi ha cap jugador amb nom {\itshape p} a la llista/rànking, s\textquotesingle{}afegeix un jugador al rànking i la llista amb nom {\itshape p} i puntuació i estadístiques a 0 de tal manera que segueixen ordenats, i retorna cert, altrament retorna fals 
+\end{DoxyPostcond}
+
+
+Definició a la línia 27 del fitxer Ranking.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{27                                           \{}
+\DoxyCodeLine{28   map<string, Jugador>::iterator it = \mbox{\hyperlink{class_ranking_a599ec15f95397565e802ae9d8e144543}{llista}}.find(p);}
+\DoxyCodeLine{29   \textcolor{keywordflow}{if} (it != \mbox{\hyperlink{class_ranking_a599ec15f95397565e802ae9d8e144543}{llista}}.end()) \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{30   \mbox{\hyperlink{class_jugador}{Jugador}} j(p);}
+\DoxyCodeLine{31   pair< map<string, Jugador>::iterator, \textcolor{keywordtype}{bool} > pair;}
+\DoxyCodeLine{32   pair = \mbox{\hyperlink{class_ranking_a599ec15f95397565e802ae9d8e144543}{llista}}.insert(make\_pair(p, j));}
+\DoxyCodeLine{33   \mbox{\hyperlink{class_ranking_ab63addb21d82ffcbbf89ff1ed4927054}{ranking}}.push\_back(pair.first);}
+\DoxyCodeLine{34   \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{35 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ranking_ab63d27dc5a053748c2f39678d4a619c0}\label{class_ranking_ab63d27dc5a053748c2f39678d4a619c0}} 
+\index{Ranking@{Ranking}!baixa\_jugador@{baixa\_jugador}}
+\index{baixa\_jugador@{baixa\_jugador}!Ranking@{Ranking}}
+\doxysubsubsection{\texorpdfstring{baixa\_jugador()}{baixa\_jugador()}}
+{\footnotesize\ttfamily bool Ranking\+::baixa\+\_\+jugador (\begin{DoxyParamCaption}\item[{const string \&}]{j }\end{DoxyParamCaption})}
+
+
+
+Esborra del rànking i la llista del paràmetre implícit el jugador amb nom {\itshape j} 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape j} no és buit 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+si hi ha un jugador amb nom {\itshape j} a la llista/rànking, s\textquotesingle{}elimina aquest jugador tant del rànking com la llista i retorna cert, altrament retorna fals 
+\end{DoxyPostcond}
+
+
+Definició a la línia 37 del fitxer Ranking.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{37                                            \{}
+\DoxyCodeLine{38   map<string, Jugador>::iterator it = \mbox{\hyperlink{class_ranking_a599ec15f95397565e802ae9d8e144543}{llista}}.find(j);}
+\DoxyCodeLine{39   \textcolor{keywordflow}{if} (it == \mbox{\hyperlink{class_ranking_a599ec15f95397565e802ae9d8e144543}{llista}}.end()) \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{40   \textcolor{keywordtype}{bool} found = \textcolor{keyword}{false};}
+\DoxyCodeLine{41   \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{42   \textcolor{keywordflow}{while} (not found and i < \mbox{\hyperlink{class_ranking_ab63addb21d82ffcbbf89ff1ed4927054}{ranking}}.size()) \{}
+\DoxyCodeLine{43     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_ranking_ab63addb21d82ffcbbf89ff1ed4927054}{ranking}}[i] == it) found = \textcolor{keyword}{true};}
+\DoxyCodeLine{44     \textcolor{keywordflow}{else} ++i;}
+\DoxyCodeLine{45   \}}
+\DoxyCodeLine{46   \textcolor{keywordflow}{while} (i < \mbox{\hyperlink{class_ranking_ab63addb21d82ffcbbf89ff1ed4927054}{ranking}}.size() -\/ 1) \{}
+\DoxyCodeLine{47     map<string, Jugador>::iterator aux = \mbox{\hyperlink{class_ranking_ab63addb21d82ffcbbf89ff1ed4927054}{ranking}}[i];}
+\DoxyCodeLine{48     \mbox{\hyperlink{class_ranking_ab63addb21d82ffcbbf89ff1ed4927054}{ranking}}[i] = \mbox{\hyperlink{class_ranking_ab63addb21d82ffcbbf89ff1ed4927054}{ranking}}[i + 1];}
+\DoxyCodeLine{49     \mbox{\hyperlink{class_ranking_ab63addb21d82ffcbbf89ff1ed4927054}{ranking}}[i + 1] = aux;}
+\DoxyCodeLine{50     ++i;}
+\DoxyCodeLine{51   \}}
+\DoxyCodeLine{52   \mbox{\hyperlink{class_ranking_ab63addb21d82ffcbbf89ff1ed4927054}{ranking}}.pop\_back();}
+\DoxyCodeLine{53   \mbox{\hyperlink{class_ranking_a599ec15f95397565e802ae9d8e144543}{llista}}.erase(it);}
+\DoxyCodeLine{54   \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{55 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ranking_ab00377801bf2969af81146c2a050f6fb}\label{class_ranking_ab00377801bf2969af81146c2a050f6fb}} 
+\index{Ranking@{Ranking}!ordenar\_ranking@{ordenar\_ranking}}
+\index{ordenar\_ranking@{ordenar\_ranking}!Ranking@{Ranking}}
+\doxysubsubsection{\texorpdfstring{ordenar\_ranking()}{ordenar\_ranking()}}
+{\footnotesize\ttfamily void Ranking\+::ordenar\+\_\+ranking (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Ordena en ordre creixent de puntuació els jugadors del rànking. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+s\textquotesingle{}ha ordenat el rànking en ordre creixent de puntuació dels jugadors 
+\end{DoxyPostcond}
+
+
+Definició a la línia 57 del fitxer Ranking.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{57                               \{}
+\DoxyCodeLine{58   stable\_sort(\mbox{\hyperlink{class_ranking_ab63addb21d82ffcbbf89ff1ed4927054}{ranking}}.begin(), \mbox{\hyperlink{class_ranking_ab63addb21d82ffcbbf89ff1ed4927054}{ranking}}.end(), \mbox{\hyperlink{class_ranking_a6e33f856ed64f8b0a27338f7f54d647b}{ordre\_ranking}});}
+\DoxyCodeLine{59 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ranking_a3cafaca9c780db230bf52f87c89c4722}\label{class_ranking_a3cafaca9c780db230bf52f87c89c4722}} 
+\index{Ranking@{Ranking}!actualitzar\_partits@{actualitzar\_partits}}
+\index{actualitzar\_partits@{actualitzar\_partits}!Ranking@{Ranking}}
+\doxysubsubsection{\texorpdfstring{actualitzar\_partits()}{actualitzar\_partits()}}
+{\footnotesize\ttfamily void Ranking\+::actualitzar\+\_\+partits (\begin{DoxyParamCaption}\item[{const string \&}]{j,  }\item[{const pair$<$ int, int $>$ \&}]{partits }\end{DoxyParamCaption})}
+
+
+
+Actualitza les estadítiques \char`\"{}partits guanyats\char`\"{} i \char`\"{}partits perduts\char`\"{} del jugador amb nom {\itshape j} 
+
+\begin{DoxyPrecond}{Precondició}
+hi ha un únic jugador amb nom {\itshape j} al rànking del paràmetre implícit, {\itshape partits} té com a primer i segon elements el número de partits guanyats i perduts a afegir a les estadístiques del jugador {\itshape j} respectivament 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+s\textquotesingle{}han actualitzat les estadístiques \char`\"{}partits guanyats\char`\"{} i \char`\"{}partits perduts\char`\"{} del jugador amb nom {\itshape j} segons els valors de {\itshape partits} 
+\end{DoxyPostcond}
+
+
+Definició a la línia 61 del fitxer Ranking.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{61                                                                                 \{}
+\DoxyCodeLine{62   map<string, Jugador>::iterator it = \mbox{\hyperlink{class_ranking_a599ec15f95397565e802ae9d8e144543}{llista}}.find(j);}
+\DoxyCodeLine{63   it-\/>second.augmentar\_partits(partits);}
+\DoxyCodeLine{64 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ranking_a8ae92fc20d1284ed16b8b0f64ec9cc62}\label{class_ranking_a8ae92fc20d1284ed16b8b0f64ec9cc62}} 
+\index{Ranking@{Ranking}!actualitzar\_sets@{actualitzar\_sets}}
+\index{actualitzar\_sets@{actualitzar\_sets}!Ranking@{Ranking}}
+\doxysubsubsection{\texorpdfstring{actualitzar\_sets()}{actualitzar\_sets()}}
+{\footnotesize\ttfamily void Ranking\+::actualitzar\+\_\+sets (\begin{DoxyParamCaption}\item[{const string \&}]{j,  }\item[{const pair$<$ int, int $>$ \&}]{sets }\end{DoxyParamCaption})}
+
+
+
+Actualitza les estadítiques \char`\"{}sets guanyats\char`\"{} i \char`\"{}sets perduts\char`\"{} del jugador amb nom {\itshape j} 
+
+\begin{DoxyPrecond}{Precondició}
+hi ha un únic jugador amb nom {\itshape j} al rànking del paràmetre implícit, {\itshape sets} té com a primer i segon elements el número de sets guanyats i perduts a afegir a les estadístiques del jugador {\itshape j} respectivament 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+s\textquotesingle{}han actualitzat les estadístiques \char`\"{}sets guanyats\char`\"{} i \char`\"{}sets perduts\char`\"{} del jugador amb nom {\itshape j} segons els valors de {\itshape sets} 
+\end{DoxyPostcond}
+
+
+Definició a la línia 66 del fitxer Ranking.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{66                                                                           \{}
+\DoxyCodeLine{67   map<string, Jugador>::iterator it = \mbox{\hyperlink{class_ranking_a599ec15f95397565e802ae9d8e144543}{llista}}.find(j);}
+\DoxyCodeLine{68   it-\/>second.augmentar\_sets(sets);}
+\DoxyCodeLine{69 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ranking_a7dce29cb261b844884eb41fc4e68556b}\label{class_ranking_a7dce29cb261b844884eb41fc4e68556b}} 
+\index{Ranking@{Ranking}!actualitzar\_jocs@{actualitzar\_jocs}}
+\index{actualitzar\_jocs@{actualitzar\_jocs}!Ranking@{Ranking}}
+\doxysubsubsection{\texorpdfstring{actualitzar\_jocs()}{actualitzar\_jocs()}}
+{\footnotesize\ttfamily void Ranking\+::actualitzar\+\_\+jocs (\begin{DoxyParamCaption}\item[{const string \&}]{j,  }\item[{const pair$<$ int, int $>$ \&}]{jocs }\end{DoxyParamCaption})}
+
+
+
+Actualitza les estadítiques \char`\"{}jocs guanyats\char`\"{} i \char`\"{}jocs perduts\char`\"{} del jugador amb nom {\itshape j} 
+
+\begin{DoxyPrecond}{Precondició}
+hi ha un únic jugador amb nom {\itshape j} al rànking del paràmetre implícit, {\itshape jocs} té com a primer i segon elements el número de jocs guanyats i perduts a afegir a les estadístiques del jugador {\itshape j} respectivament 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+s\textquotesingle{}han actualitzat les estadístiques \char`\"{}jocs guanyats\char`\"{} i \char`\"{}jocs perduts\char`\"{} del jugador amb nom {\itshape j} segons els valors de {\itshape sets} 
+\end{DoxyPostcond}
+
+
+Definició a la línia 71 del fitxer Ranking.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{71                                                                           \{}
+\DoxyCodeLine{72   map<string, Jugador>::iterator it = \mbox{\hyperlink{class_ranking_a599ec15f95397565e802ae9d8e144543}{llista}}.find(j);}
+\DoxyCodeLine{73   it-\/>second.augmentar\_jocs(jocs);}
+\DoxyCodeLine{74 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ranking_a0655d4f2b9e8db5c2c5bd74197ed5b30}\label{class_ranking_a0655d4f2b9e8db5c2c5bd74197ed5b30}} 
+\index{Ranking@{Ranking}!actualitzar\_punts@{actualitzar\_punts}}
+\index{actualitzar\_punts@{actualitzar\_punts}!Ranking@{Ranking}}
+\doxysubsubsection{\texorpdfstring{actualitzar\_punts()}{actualitzar\_punts()}}
+{\footnotesize\ttfamily void Ranking\+::actualitzar\+\_\+punts (\begin{DoxyParamCaption}\item[{const string \&}]{j,  }\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Actualitza la puntuació del jugador amb nom {\itshape j} segons el valor de {\itshape x} 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape j} no és buit i {\itshape x} està inicialitzat amb un valor 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+s\textquotesingle{}han actualitzat la puntuació del jugador amb nom {\itshape j} 
+\end{DoxyPostcond}
+
+
+Definició a la línia 76 del fitxer Ranking.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{76                                                       \{}
+\DoxyCodeLine{77   map<string, Jugador>::iterator it = \mbox{\hyperlink{class_ranking_a599ec15f95397565e802ae9d8e144543}{llista}}.find(j);}
+\DoxyCodeLine{78   \textcolor{keywordflow}{if} (it != \mbox{\hyperlink{class_ranking_a599ec15f95397565e802ae9d8e144543}{llista}}.end()) it-\/>second.modificar\_puntuacio(x);}
+\DoxyCodeLine{79 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ranking_a1301d78fa35b7a57c10f890be6a5e724}\label{class_ranking_a1301d78fa35b7a57c10f890be6a5e724}} 
+\index{Ranking@{Ranking}!actualitzar\_tornejos@{actualitzar\_tornejos}}
+\index{actualitzar\_tornejos@{actualitzar\_tornejos}!Ranking@{Ranking}}
+\doxysubsubsection{\texorpdfstring{actualitzar\_tornejos()}{actualitzar\_tornejos()}}
+{\footnotesize\ttfamily void Ranking\+::actualitzar\+\_\+tornejos (\begin{DoxyParamCaption}\item[{const string \&}]{j,  }\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Augmenta l\textquotesingle{}estadística \char`\"{}tornejos disputats\char`\"{} del jugador amb nom {\itshape j} segons el valor de {\itshape x} 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape j} no és buit, {\itshape x} $>$= 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+s\textquotesingle{}ha actualitzat l\textquotesingle{}estadística \char`\"{}tornejos disputats\char`\"{} del jugador amb nom {\itshape j} segons el valor de {\itshape x} 
+\end{DoxyPostcond}
+
+
+Definició a la línia 81 del fitxer Ranking.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{81                                                          \{}
+\DoxyCodeLine{82   map<string, Jugador>::iterator it = \mbox{\hyperlink{class_ranking_a599ec15f95397565e802ae9d8e144543}{llista}}.find(j);}
+\DoxyCodeLine{83   \textcolor{keywordflow}{if} (it != \mbox{\hyperlink{class_ranking_a599ec15f95397565e802ae9d8e144543}{llista}}.end()) it-\/>second.augmentar\_tornejos(x);}
+\DoxyCodeLine{84 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ranking_ab8432ae2eecb7bbb653a94bbe964d32c}\label{class_ranking_ab8432ae2eecb7bbb653a94bbe964d32c}} 
+\index{Ranking@{Ranking}!mida@{mida}}
+\index{mida@{mida}!Ranking@{Ranking}}
+\doxysubsubsection{\texorpdfstring{mida()}{mida()}}
+{\footnotesize\ttfamily int Ranking\+::mida (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna el número de jugadors que conté la llista/rànking del paràmetre implícit. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+retorna el número de jugadors que conté la llista/rànking del paràmetre implícit 
+\end{DoxyPostcond}
+
+
+Definició a la línia 86 del fitxer Ranking.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{86                   \{}
+\DoxyCodeLine{87   \textcolor{keywordflow}{return} \mbox{\hyperlink{class_ranking_a599ec15f95397565e802ae9d8e144543}{llista}}.size();}
+\DoxyCodeLine{88 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ranking_a43fcf8beb2a3f1c1714e1ffbf61135e4}\label{class_ranking_a43fcf8beb2a3f1c1714e1ffbf61135e4}} 
+\index{Ranking@{Ranking}!buscar\_posicio@{buscar\_posicio}}
+\index{buscar\_posicio@{buscar\_posicio}!Ranking@{Ranking}}
+\doxysubsubsection{\texorpdfstring{buscar\_posicio()}{buscar\_posicio()}}
+{\footnotesize\ttfamily string Ranking\+::buscar\+\_\+posicio (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Retorna el nom del jugador a la posició x del rànking. 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape x} $<$= mida del rànking paràmetre implícit 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+retorna el nom del jugador a la posició x del rànking 
+\end{DoxyPostcond}
+
+
+Definició a la línia 90 del fitxer Ranking.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{90                                     \{}
+\DoxyCodeLine{91   \textcolor{keywordflow}{return} \mbox{\hyperlink{class_ranking_ab63addb21d82ffcbbf89ff1ed4927054}{ranking}}[x -\/ 1]-\/>first;}
+\DoxyCodeLine{92 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ranking_a7f68c4f16408337d955063e16d4c18f8}\label{class_ranking_a7f68c4f16408337d955063e16d4c18f8}} 
+\index{Ranking@{Ranking}!imprimeix\_ranking@{imprimeix\_ranking}}
+\index{imprimeix\_ranking@{imprimeix\_ranking}!Ranking@{Ranking}}
+\doxysubsubsection{\texorpdfstring{imprimeix\_ranking()}{imprimeix\_ranking()}}
+{\footnotesize\ttfamily void Ranking\+::imprimeix\+\_\+ranking (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Imprimeix en ordre la posició en el rànking, el nom i la puntuació de tots els jugadors. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+s\textquotesingle{}ha imprès al canal de sortida, en ordre, la posició en el rànking, el nom i la puntuació de tots els jugadors del rànking del paràmetre implícit 
+\end{DoxyPostcond}
+
+
+Definició a la línia 94 del fitxer Ranking.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{94                                 \{}
+\DoxyCodeLine{95   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_ranking_ab63addb21d82ffcbbf89ff1ed4927054}{ranking}}.size(); ++i) \{}
+\DoxyCodeLine{96     cout << i + 1 << \textcolor{stringliteral}{" "} << \mbox{\hyperlink{class_ranking_ab63addb21d82ffcbbf89ff1ed4927054}{ranking}}[i]-\/>first << \textcolor{stringliteral}{" "};}
+\DoxyCodeLine{97     cout << \mbox{\hyperlink{class_ranking_ab63addb21d82ffcbbf89ff1ed4927054}{ranking}}[i]-\/>second.consultar\_puntuacio() << endl;}
+\DoxyCodeLine{98   \}}
+\DoxyCodeLine{99 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ranking_a9bf1ea8615dedd1cfa9ab820454df01d}\label{class_ranking_a9bf1ea8615dedd1cfa9ab820454df01d}} 
+\index{Ranking@{Ranking}!imprimeix\_jugadors@{imprimeix\_jugadors}}
+\index{imprimeix\_jugadors@{imprimeix\_jugadors}!Ranking@{Ranking}}
+\doxysubsubsection{\texorpdfstring{imprimeix\_jugadors()}{imprimeix\_jugadors()}}
+{\footnotesize\ttfamily void Ranking\+::imprimeix\+\_\+jugadors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Imprimeix per ordre alfabètic el nom, la posició en el rànking, la puntuació i totes les estadístiques dels jugadors de la llista del paràmetre implícit. 
+
+\begin{DoxyPrecond}{Precondició}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+s\textquotesingle{}ha imprès al canal de sortida per ordre alfabètic el nom, la posició en el rànking, la puntuació i totes les estadístiques dels jugadors de la llista 
+\end{DoxyPostcond}
+
+
+Definició a la línia 101 del fitxer Ranking.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{101                                  \{}
+\DoxyCodeLine{102   map<string, Jugador>::iterator it = \mbox{\hyperlink{class_ranking_a599ec15f95397565e802ae9d8e144543}{llista}}.begin();}
+\DoxyCodeLine{103   \textcolor{keywordflow}{while} (it != \mbox{\hyperlink{class_ranking_a599ec15f95397565e802ae9d8e144543}{llista}}.end()) \{}
+\DoxyCodeLine{104     cout << it-\/>first << \textcolor{stringliteral}{" Rk:"};}
+\DoxyCodeLine{105     \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{106     \textcolor{keywordtype}{bool} found = \textcolor{keyword}{false};}
+\DoxyCodeLine{107     \textcolor{keywordflow}{while} (not found and i < \mbox{\hyperlink{class_ranking_ab63addb21d82ffcbbf89ff1ed4927054}{ranking}}.size()) \{}
+\DoxyCodeLine{108       \textcolor{keywordflow}{if} (it == \mbox{\hyperlink{class_ranking_ab63addb21d82ffcbbf89ff1ed4927054}{ranking}}[i]) found = \textcolor{keyword}{true};}
+\DoxyCodeLine{109       \textcolor{keywordflow}{else} ++i;}
+\DoxyCodeLine{110     \}}
+\DoxyCodeLine{111     cout << i + 1 << \textcolor{stringliteral}{" "};}
+\DoxyCodeLine{112     it-\/>second.imprimeix\_estadistiques();}
+\DoxyCodeLine{113     cout << endl;}
+\DoxyCodeLine{114     ++it;}
+\DoxyCodeLine{115   \}}
+\DoxyCodeLine{116 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_ranking_a5484f780b1d031a64bcce44d7cb6a768}\label{class_ranking_a5484f780b1d031a64bcce44d7cb6a768}} 
+\index{Ranking@{Ranking}!imprimeix\_jugador@{imprimeix\_jugador}}
+\index{imprimeix\_jugador@{imprimeix\_jugador}!Ranking@{Ranking}}
+\doxysubsubsection{\texorpdfstring{imprimeix\_jugador()}{imprimeix\_jugador()}}
+{\footnotesize\ttfamily bool Ranking\+::imprimeix\+\_\+jugador (\begin{DoxyParamCaption}\item[{const string \&}]{j }\end{DoxyParamCaption})}
+
+
+
+Imprimeix el nom, la posició en el rànking, la puntuació i totes les estadístiques del jugador amb nom {\itshape j} 
+
+\begin{DoxyPrecond}{Precondició}
+{\itshape j} no és buit 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+si a la llista/rànking hi ha un jugador amb nom {\itshape j}, imprimeix al canal de sortida el seu nom, la seva posició en el rànking, la seva puntuació i totes les seves estadístiques, i retorna cert, altrament retorna fals 
+\end{DoxyPostcond}
+
+
+Definició a la línia 118 del fitxer Ranking.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{118                                                \{}
+\DoxyCodeLine{119   map<string, Jugador>::iterator it = \mbox{\hyperlink{class_ranking_a599ec15f95397565e802ae9d8e144543}{llista}}.find(j);}
+\DoxyCodeLine{120   \textcolor{keywordflow}{if} (it == \mbox{\hyperlink{class_ranking_a599ec15f95397565e802ae9d8e144543}{llista}}.end()) \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{121   \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{122   \textcolor{keywordtype}{bool} found = \textcolor{keyword}{false};}
+\DoxyCodeLine{123   \textcolor{keywordflow}{while} (not found and i < \mbox{\hyperlink{class_ranking_ab63addb21d82ffcbbf89ff1ed4927054}{ranking}}.size()) \{}
+\DoxyCodeLine{124     \textcolor{keywordflow}{if} (it == \mbox{\hyperlink{class_ranking_ab63addb21d82ffcbbf89ff1ed4927054}{ranking}}[i]) found = \textcolor{keyword}{true};}
+\DoxyCodeLine{125     \textcolor{keywordflow}{else} ++i;}
+\DoxyCodeLine{126   \}}
+\DoxyCodeLine{127   cout << j << \textcolor{stringliteral}{" Rk:"} << i + 1 << \textcolor{stringliteral}{" "};}
+\DoxyCodeLine{128   it-\/>second.imprimeix\_estadistiques();}
+\DoxyCodeLine{129   cout << endl;}
+\DoxyCodeLine{130   \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{131 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentació de les Dades Membre}
+\mbox{\Hypertarget{class_ranking_a599ec15f95397565e802ae9d8e144543}\label{class_ranking_a599ec15f95397565e802ae9d8e144543}} 
+\index{Ranking@{Ranking}!llista@{llista}}
+\index{llista@{llista}!Ranking@{Ranking}}
+\doxysubsubsection{\texorpdfstring{llista}{llista}}
+{\footnotesize\ttfamily map$<$string, \mbox{\hyperlink{class_jugador}{Jugador}}$>$ Ranking\+::llista\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definició a la línia 20 del fitxer Ranking.\+hh.
+
+\mbox{\Hypertarget{class_ranking_ab63addb21d82ffcbbf89ff1ed4927054}\label{class_ranking_ab63addb21d82ffcbbf89ff1ed4927054}} 
+\index{Ranking@{Ranking}!ranking@{ranking}}
+\index{ranking@{ranking}!Ranking@{Ranking}}
+\doxysubsubsection{\texorpdfstring{ranking}{ranking}}
+{\footnotesize\ttfamily vector$<$ map$<$string, \mbox{\hyperlink{class_jugador}{Jugador}}$>$\+::iterator $>$ Ranking\+::ranking\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definició a la línia 21 del fitxer Ranking.\+hh.
+
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir dels següents fitxers\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_ranking_8hh}{Ranking.\+hh}}\item 
+\mbox{\hyperlink{_ranking_8cc}{Ranking.\+cc}}\end{DoxyCompactItemize}

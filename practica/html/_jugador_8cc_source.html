@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pràctica de PRO2 Primavera 2022. Circuito de torneos de tenis: Fitxer de Codi Jugador.cc</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Pràctica de PRO2 Primavera 2022. Circuito de torneos de tenis
+   &#160;<span id="projectnumber">v7.0 13-11-2017</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generat per Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Jugador.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_jugador_8cc.html">Veure la documentació d'aquest fitxer.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="_jugador_8hh.html">Jugador.hh</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_jugador.html#a232c46f75691af6210096e5972535d71">    7</a></span>&#160;<a class="code" href="class_jugador.html#a232c46f75691af6210096e5972535d71">Jugador::Jugador</a>() {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  nom = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  puntuacio = 0;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  tornejos_disputats = 0;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  partits = make_pair(0, 0);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  sets = make_pair(0, 0);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  jocs = make_pair(0, 0);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_jugador.html#a1990d7f990f90c517c7868ce45e2b85f">   16</a></span>&#160;<a class="code" href="class_jugador.html#a232c46f75691af6210096e5972535d71">Jugador::Jugador</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; n) {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  nom = n;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  puntuacio = 0;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  tornejos_disputats = 0;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  partits = make_pair(0, 0);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  sets = make_pair(0, 0);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  jocs = make_pair(0, 0);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_jugador.html#a9db1d422fe3b675f92d9fd687b1f42c4">   25</a></span>&#160;<a class="code" href="class_jugador.html#a9db1d422fe3b675f92d9fd687b1f42c4">Jugador::~Jugador</a>() {}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_jugador.html#aabbe8221c6327757f6ad6131301e3106">   27</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_jugador.html#aabbe8221c6327757f6ad6131301e3106">Jugador::modificar_puntuacio</a>(<span class="keywordtype">int</span> x) {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  puntuacio = puntuacio + x;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_jugador.html#a08f4d59b0fdc683d18065510baf12aad">   31</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_jugador.html#a08f4d59b0fdc683d18065510baf12aad">Jugador::augmentar_tornejos</a>(<span class="keywordtype">int</span> n) {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  tornejos_disputats += n;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_jugador.html#a87f587ebbbbf499f2069388904b1e2cf">   35</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_jugador.html#a87f587ebbbbf499f2069388904b1e2cf">Jugador::augmentar_partits</a>(<span class="keyword">const</span> pair&lt;int, int&gt;&amp; p) {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  partits.first += p.first;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  partits.second += p.second;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_jugador.html#a1a4c026130db92f03a5b4e3227f75293">   40</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_jugador.html#a1a4c026130db92f03a5b4e3227f75293">Jugador::augmentar_sets</a>(<span class="keyword">const</span> pair&lt;int, int&gt;&amp; p) {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  sets.first += p.first;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  sets.second += p.second;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_jugador.html#a59fe039c2f1574bdabbc29fe2fce367b">   45</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_jugador.html#a59fe039c2f1574bdabbc29fe2fce367b">Jugador::augmentar_jocs</a>(<span class="keyword">const</span> pair&lt;int, int&gt;&amp; p) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  jocs.first += p.first;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  jocs.second += p.second;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_jugador.html#a44796353316adc3821484969c75f9457">   50</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="class_jugador.html#a44796353316adc3821484969c75f9457">Jugador::consultar_nom</a>() {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordflow">return</span> nom;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_jugador.html#a44953936a0ebb083f5ca456d1085461b">   54</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_jugador.html#a44953936a0ebb083f5ca456d1085461b">Jugador::consultar_puntuacio</a>() {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordflow">return</span> puntuacio;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_jugador.html#a310a8fbf173a2d02fead59ffecbb80fd">   58</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_jugador.html#a310a8fbf173a2d02fead59ffecbb80fd">Jugador::imprimeix_estadistiques</a>() {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;Ps:&quot;</span> &lt;&lt; puntuacio &lt;&lt; <span class="stringliteral">&quot; Ts:&quot;</span> &lt;&lt; tornejos_disputats;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot; WM:&quot;</span> &lt;&lt; partits.first &lt;&lt; <span class="stringliteral">&quot; LM:&quot;</span> &lt;&lt; partits.second;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot; WS:&quot;</span> &lt;&lt; sets.first &lt;&lt; <span class="stringliteral">&quot; LS:&quot;</span> &lt;&lt; sets.second;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot; WG:&quot;</span> &lt;&lt; jocs.first &lt;&lt; <span class="stringliteral">&quot; LG:&quot;</span> &lt;&lt; jocs.second;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_jugador_html_a9db1d422fe3b675f92d9fd687b1f42c4"><div class="ttname"><a href="class_jugador.html#a9db1d422fe3b675f92d9fd687b1f42c4">Jugador::~Jugador</a></div><div class="ttdeci">~Jugador()</div><div class="ttdoc">Destructora per defecte.</div><div class="ttdef"><b>Definition:</b> <a href="_jugador_8cc_source.html#l00025">Jugador.cc:25</a></div></div>
+<div class="ttc" id="aclass_jugador_html_a87f587ebbbbf499f2069388904b1e2cf"><div class="ttname"><a href="class_jugador.html#a87f587ebbbbf499f2069388904b1e2cf">Jugador::augmentar_partits</a></div><div class="ttdeci">void augmentar_partits(const pair&lt; int, int &gt; &amp;p)</div><div class="ttdoc">Augmenta les estadístiques &quot;partits guanyats&quot; i &quot;partits perduts&quot; del paràmetre implícit segons els v...</div><div class="ttdef"><b>Definition:</b> <a href="_jugador_8cc_source.html#l00035">Jugador.cc:35</a></div></div>
+<div class="ttc" id="aclass_jugador_html_a44953936a0ebb083f5ca456d1085461b"><div class="ttname"><a href="class_jugador.html#a44953936a0ebb083f5ca456d1085461b">Jugador::consultar_puntuacio</a></div><div class="ttdeci">int consultar_puntuacio()</div><div class="ttdoc">Retorna la puntuació del paràmetre implícit.</div><div class="ttdef"><b>Definition:</b> <a href="_jugador_8cc_source.html#l00054">Jugador.cc:54</a></div></div>
+<div class="ttc" id="aclass_jugador_html_a08f4d59b0fdc683d18065510baf12aad"><div class="ttname"><a href="class_jugador.html#a08f4d59b0fdc683d18065510baf12aad">Jugador::augmentar_tornejos</a></div><div class="ttdeci">void augmentar_tornejos(int n)</div><div class="ttdoc">Augmenta l'estadística &quot;tornejos disputats&quot; del paràmetre implícit en n</div><div class="ttdef"><b>Definition:</b> <a href="_jugador_8cc_source.html#l00031">Jugador.cc:31</a></div></div>
+<div class="ttc" id="aclass_jugador_html_a232c46f75691af6210096e5972535d71"><div class="ttname"><a href="class_jugador.html#a232c46f75691af6210096e5972535d71">Jugador::Jugador</a></div><div class="ttdeci">Jugador()</div><div class="ttdoc">Constructora per defecte.</div><div class="ttdef"><b>Definition:</b> <a href="_jugador_8cc_source.html#l00007">Jugador.cc:7</a></div></div>
+<div class="ttc" id="aclass_jugador_html_a1a4c026130db92f03a5b4e3227f75293"><div class="ttname"><a href="class_jugador.html#a1a4c026130db92f03a5b4e3227f75293">Jugador::augmentar_sets</a></div><div class="ttdeci">void augmentar_sets(const pair&lt; int, int &gt; &amp;p)</div><div class="ttdoc">Augmenta les estadístiques &quot;sets guanyats&quot; i &quot;sets perduts&quot; del paràmetre implícit segons els valors ...</div><div class="ttdef"><b>Definition:</b> <a href="_jugador_8cc_source.html#l00040">Jugador.cc:40</a></div></div>
+<div class="ttc" id="aclass_jugador_html_a59fe039c2f1574bdabbc29fe2fce367b"><div class="ttname"><a href="class_jugador.html#a59fe039c2f1574bdabbc29fe2fce367b">Jugador::augmentar_jocs</a></div><div class="ttdeci">void augmentar_jocs(const pair&lt; int, int &gt; &amp;p)</div><div class="ttdoc">Augmenta les estadístiques &quot;jocs guanyats&quot; i &quot;jocs perduts&quot; del paràmetre implícit segons els valors ...</div><div class="ttdef"><b>Definition:</b> <a href="_jugador_8cc_source.html#l00045">Jugador.cc:45</a></div></div>
+<div class="ttc" id="a_jugador_8hh_html"><div class="ttname"><a href="_jugador_8hh.html">Jugador.hh</a></div><div class="ttdoc">Especificació de la classe Jugador.</div></div>
+<div class="ttc" id="aclass_jugador_html_a310a8fbf173a2d02fead59ffecbb80fd"><div class="ttname"><a href="class_jugador.html#a310a8fbf173a2d02fead59ffecbb80fd">Jugador::imprimeix_estadistiques</a></div><div class="ttdeci">void imprimeix_estadistiques()</div><div class="ttdoc">Imprimeix la puntuació i totes les estadístiques sobre el paràmetre implícit.</div><div class="ttdef"><b>Definition:</b> <a href="_jugador_8cc_source.html#l00058">Jugador.cc:58</a></div></div>
+<div class="ttc" id="aclass_jugador_html_aabbe8221c6327757f6ad6131301e3106"><div class="ttname"><a href="class_jugador.html#aabbe8221c6327757f6ad6131301e3106">Jugador::modificar_puntuacio</a></div><div class="ttdeci">void modificar_puntuacio(int x)</div><div class="ttdoc">Modifica la puntuació del paràmetre implícit segons el valor de x</div><div class="ttdef"><b>Definition:</b> <a href="_jugador_8cc_source.html#l00027">Jugador.cc:27</a></div></div>
+<div class="ttc" id="aclass_jugador_html_a44796353316adc3821484969c75f9457"><div class="ttname"><a href="class_jugador.html#a44796353316adc3821484969c75f9457">Jugador::consultar_nom</a></div><div class="ttdeci">string consultar_nom()</div><div class="ttdoc">Retorna el nom del paràmetre implícit.</div><div class="ttdef"><b>Definition:</b> <a href="_jugador_8cc_source.html#l00050">Jugador.cc:50</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generat per &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

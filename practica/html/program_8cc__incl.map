@@ -1,0 +1,9 @@
+<map id="program.cc" name="program.cc">
+<area shape="rect" id="node1" title="Programa principal per la pràctica de PRO2 de 2022: Circuito de torneos de tenis" alt="" coords="169,5,255,32"/>
+<area shape="rect" id="node2" href="$_conjunt___categories_8hh.html" title="Especificació de la classe Conjunt_Categories." alt="" coords="5,229,157,256"/>
+<area shape="rect" id="node3" href="$_conjunt___tornejos_8hh.html" title="Especificació de la classe Conjunt_Tornejos." alt="" coords="142,80,282,107"/>
+<area shape="rect" id="node5" href="$_ranking_8hh.html" title="Especificació de la classe Ranking." alt="" coords="277,229,363,256"/>
+<area shape="rect" id="node4" href="$_torneig_8hh.html" title="Especificació de la classe Torneig." alt="" coords="173,155,256,181"/>
+<area shape="rect" id="node7" href="$_partit_8hh.html" title="Especificació de la classe Partit." alt="" coords="182,229,253,256"/>
+<area shape="rect" id="node6" href="$_jugador_8hh.html" title="Especificació de la classe Jugador." alt="" coords="277,304,363,331"/>
+</map>

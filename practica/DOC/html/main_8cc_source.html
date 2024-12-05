@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pràctica de PRO2. Especificació de la pràctica.: Fitxer de Codi main.cc</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Pràctica de PRO2. Especificació de la pràctica.
+   &#160;<span id="projectnumber">versió 15-abr-2022</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generat per Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">main.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="main_8cc.html">Veure la documentació d'aquest fitxer.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="_conjunt___categories_8hh.html">Conjunt_Categories.hh</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="_conjunt___tornejos_8hh.html">Conjunt_Tornejos.hh</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="_ranking_8hh.html">Ranking.hh</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef NO_DIAGRAM</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include&lt;iostream&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include&lt;list&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="main_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   16</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">int</span> num_cat, max_niv;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    cin &gt;&gt; num_cat &gt;&gt; max_niv;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_conj___categories.html">Conj_Categories</a> categories(num_cat, max_niv);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">int</span> num_tjs;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    cin &gt;&gt; num_tjs;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_conjunt___tornejos.html">Conjunt_Tornejos</a> tour(num_tjs);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">int</span> num_jgds;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    cin &gt;&gt; num_jgds;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    list&lt;string&gt; tour_inicial = tour.<a class="code" href="class_conjunt___tornejos.html#a16ea053304ee506432ce087ed5d2d415">llistar_tornejos</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_ranking.html">Ranking</a> ranking(num_jgds, tour_inicial);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">string</span> comando;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    cin &gt;&gt; comando;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">while</span> (comando != <span class="stringliteral">&quot;fin&quot;</span>) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">if</span> (comando == <span class="stringliteral">&quot;nuevo_jugador&quot;</span> or comando == <span class="stringliteral">&quot;nj&quot;</span>) {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordtype">string</span> p;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            cin &gt;&gt; p;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            list&lt;Jugador&gt;::iterator it = ranking.<a class="code" href="class_ranking.html#aa2bfabe4d132f78dc81c5ce67df7f01a">buscar_jugador</a>(p);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordflow">if</span> (ranking.<a class="code" href="class_ranking.html#a36c978c4f27bb82ee8a20dbab4420985">buscar_iterador</a>(it)) cout &lt;&lt; <span class="stringliteral">&quot;missatge d&#39;error&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                list&lt;string&gt; tjs = tour.<a class="code" href="class_conjunt___tornejos.html#a16ea053304ee506432ce087ed5d2d415">llistar_tornejos</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <a class="code" href="class_jugador.html">Jugador</a> j(p, tjs);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                ranking.<a class="code" href="class_ranking.html#a0e8716827ec6442dadc6d53bb4dc3ab3">alta_jugador</a>(j);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (comando == <span class="stringliteral">&quot;nuevo_torneo&quot;</span> or comando == <span class="stringliteral">&quot;nt&quot;</span>) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordtype">string</span> t;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordtype">int</span> c;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            cin &gt;&gt; t &gt;&gt; c;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            list&lt;Torneig&gt;::iterator it = tour.<a class="code" href="class_conjunt___tornejos.html#abc9140532a73a2f1faacffcd3037e0f2">buscar_torneig</a>(t);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordflow">if</span> (tour.<a class="code" href="class_conjunt___tornejos.html#a1ce15b0b0566220da46c8d25c37815fb">buscar_iterador</a>(it)) cout &lt;&lt; <span class="stringliteral">&quot;missatge d&#39;error&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <a class="code" href="class_torneig.html">Torneig</a> tg(t, c);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                tour.<a class="code" href="class_conjunt___tornejos.html#a4da630471c1c4d27b532686a79114a21">alta_torneig</a>(tg);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                ranking.<a class="code" href="class_ranking.html#a70e2a51bf131daa5dbd2bba9aac96637">afegir_torneig</a>(t);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (comando == <span class="stringliteral">&quot;baja_jugador&quot;</span> or comando == <span class="stringliteral">&quot;bj&quot;</span>) {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordtype">string</span> p;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            cin &gt;&gt; p;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            list&lt;Jugador&gt;::iterator it = ranking.<a class="code" href="class_ranking.html#aa2bfabe4d132f78dc81c5ce67df7f01a">buscar_jugador</a>(p);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordflow">if</span> (not ranking.<a class="code" href="class_ranking.html#a36c978c4f27bb82ee8a20dbab4420985">buscar_iterador</a>(it)) cout &lt;&lt; <span class="stringliteral">&quot;missatge d&#39;error&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordflow">else</span> ranking.<a class="code" href="class_ranking.html#a89629015f9378cd5b251bb620f964e30">baixa_jugador</a>(it);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (comando == <span class="stringliteral">&quot;baja_torneo&quot;</span> or comando == <span class="stringliteral">&quot;bt&quot;</span>) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordtype">string</span> t;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            cin &gt;&gt; t;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            list&lt;Torneig&gt;::iterator it = tour.<a class="code" href="class_conjunt___tornejos.html#abc9140532a73a2f1faacffcd3037e0f2">buscar_torneig</a>(t);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">if</span> (not tour.<a class="code" href="class_conjunt___tornejos.html#a1ce15b0b0566220da46c8d25c37815fb">buscar_iterador</a>(it)) cout &lt;&lt; <span class="stringliteral">&quot;missatge d&#39;error&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                tour.<a class="code" href="class_conjunt___tornejos.html#a1d771eccbd52736e8fd84e3d0b11451c">baixa_torneig</a>(it);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                ranking.<a class="code" href="class_ranking.html#a255d86f5886087cc553a090f8beaa9df">eliminar_torneig</a>(t);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (comando == <span class="stringliteral">&quot;iniciar_torneo&quot;</span> or comando == <span class="stringliteral">&quot;it&quot;</span>) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordtype">string</span> t;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordtype">int</span> n;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            cin &gt;&gt; t &gt;&gt; n;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            list&lt;string&gt; inscripcions = ranking.<a class="code" href="class_ranking.html#aea385ffd5e58d6d1fb0e2f790367b4dd">llista_inscripcions</a>(n);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            tour.<a class="code" href="class_conjunt___tornejos.html#a83b6ed8a64b78b166ec6b7b455a2037c">imprimeix_emparellaments</a>(t, inscripcions);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (comando == <span class="stringliteral">&quot;finalizar_torneo&quot;</span> or comando == <span class="stringliteral">&quot;ft&quot;</span>) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordtype">string</span> t;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            cin &gt;&gt; t;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            tour.<a class="code" href="class_conjunt___tornejos.html#ad01bb494f32ea74e444cff7b368f454c">finalitzar_torneig</a>(t);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordtype">int</span> c = tour.<a class="code" href="class_conjunt___tornejos.html#a972753b1b9867b6987db9cfdaad314e3">categoria</a>(t);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            vector&lt;int&gt; punts = categories.<a class="code" href="class_conj___categories.html#a7cebfe4f6e7e47e7dd826aa954606b84">punts</a>(c);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            ranking.<a class="code" href="class_ranking.html#a124c5ea84e3702119b743e3accf8d109">actualitzar_ranking</a>(punts);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (comando == <span class="stringliteral">&quot;listar_ranking&quot;</span> or comando == <span class="stringliteral">&quot;lr&quot;</span>) {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            ranking.<a class="code" href="class_ranking.html#a7f68c4f16408337d955063e16d4c18f8">imprimeix_ranking</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (comando == <span class="stringliteral">&quot;listar_jugadores&quot;</span> or comando == <span class="stringliteral">&quot;lj&quot;</span>) {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            ranking.<a class="code" href="class_ranking.html#a9bf1ea8615dedd1cfa9ab820454df01d">imprimeix_jugadors</a>();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (comando == <span class="stringliteral">&quot;consultar_jugador&quot;</span> or comando == <span class="stringliteral">&quot;cj&quot;</span>) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordtype">string</span> p;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            cin &gt;&gt; p;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            list&lt;Jugador&gt;::iterator it = ranking.<a class="code" href="class_ranking.html#aa2bfabe4d132f78dc81c5ce67df7f01a">buscar_jugador</a>(p);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="keywordflow">if</span> (not ranking.<a class="code" href="class_ranking.html#a36c978c4f27bb82ee8a20dbab4420985">buscar_iterador</a>(it)) cout &lt;&lt; <span class="stringliteral">&quot;missatge d&#39;error&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordflow">else</span> ranking.<a class="code" href="class_ranking.html#a4472913642c2acaced971e15c7ea83fc">imprimeix_jugador</a>(it);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (comando == <span class="stringliteral">&quot;listar_torneos&quot;</span> or comando == <span class="stringliteral">&quot;lt&quot;</span>) {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            tour.<a class="code" href="class_conjunt___tornejos.html#a60b4b58f208b766f6e1fbe4845f35dba">imprimeix_tour</a>();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (comando == <span class="stringliteral">&quot;listar_categorias&quot;</span> or comando == <span class="stringliteral">&quot;lc&quot;</span>) {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            categories.<a class="code" href="class_conj___categories.html#a72edaa4af121256da492dcb6d9f5b29d">imprimeix_categories</a>();</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_ranking_html"><div class="ttname"><a href="class_ranking.html">Ranking</a></div><div class="ttdef"><b>Definition:</b> <a href="_ranking_8hh_source.html#l00012">Ranking.hh:12</a></div></div>
+<div class="ttc" id="aclass_conjunt___tornejos_html_ad01bb494f32ea74e444cff7b368f454c"><div class="ttname"><a href="class_conjunt___tornejos.html#ad01bb494f32ea74e444cff7b368f454c">Conjunt_Tornejos::finalitzar_torneig</a></div><div class="ttdeci">void finalitzar_torneig(const string &amp;t)</div><div class="ttdoc">Posa a &quot;no iniciat&quot; l'estat del torneig amb nom t de la llista de tornejos del paràmetre implícit.</div></div>
+<div class="ttc" id="aclass_ranking_html_a70e2a51bf131daa5dbd2bba9aac96637"><div class="ttname"><a href="class_ranking.html#a70e2a51bf131daa5dbd2bba9aac96637">Ranking::afegir_torneig</a></div><div class="ttdeci">void afegir_torneig(const string &amp;t)</div><div class="ttdoc">Afegeix un torneig amb nom t a la llista de punts per torneig de tots els elements del rànking del pa...</div></div>
+<div class="ttc" id="aclass_torneig_html"><div class="ttname"><a href="class_torneig.html">Torneig</a></div><div class="ttdef"><b>Definition:</b> <a href="_torneig_8hh_source.html#l00009">Torneig.hh:9</a></div></div>
+<div class="ttc" id="aclass_ranking_html_a9bf1ea8615dedd1cfa9ab820454df01d"><div class="ttname"><a href="class_ranking.html#a9bf1ea8615dedd1cfa9ab820454df01d">Ranking::imprimeix_jugadors</a></div><div class="ttdeci">void imprimeix_jugadors()</div><div class="ttdoc">Imprimeix per ordre alfabètic el nom, la posició en el rànking, la puntuació i totes les estadístique...</div></div>
+<div class="ttc" id="a_conjunt___categories_8hh_html"><div class="ttname"><a href="_conjunt___categories_8hh.html">Conjunt_Categories.hh</a></div></div>
+<div class="ttc" id="aclass_ranking_html_a4472913642c2acaced971e15c7ea83fc"><div class="ttname"><a href="class_ranking.html#a4472913642c2acaced971e15c7ea83fc">Ranking::imprimeix_jugador</a></div><div class="ttdeci">void imprimeix_jugador(list&lt; Jugador &gt;::iterator it)</div><div class="ttdoc">Imprimeix el nom, la posició en el rànking, la puntuació i totes les estadístiques del jugador apunta...</div></div>
+<div class="ttc" id="aclass_conjunt___tornejos_html_a83b6ed8a64b78b166ec6b7b455a2037c"><div class="ttname"><a href="class_conjunt___tornejos.html#a83b6ed8a64b78b166ec6b7b455a2037c">Conjunt_Tornejos::imprimeix_emparellaments</a></div><div class="ttdeci">void imprimeix_emparellaments(string t, const list&lt; string &gt; &amp;inscripcions)</div><div class="ttdoc">Imprimeix els emparellaments entre els jugadors representats per inscripcions al torneig amb nom t</div></div>
+<div class="ttc" id="aclass_conjunt___tornejos_html_a1d771eccbd52736e8fd84e3d0b11451c"><div class="ttname"><a href="class_conjunt___tornejos.html#a1d771eccbd52736e8fd84e3d0b11451c">Conjunt_Tornejos::baixa_torneig</a></div><div class="ttdeci">void baixa_torneig(list&lt; Torneig &gt;::iterator it)</div><div class="ttdoc">Esborra l'element apuntat per it de la llista de tornejos del paràmetre implícit.</div></div>
+<div class="ttc" id="aclass_ranking_html_a36c978c4f27bb82ee8a20dbab4420985"><div class="ttname"><a href="class_ranking.html#a36c978c4f27bb82ee8a20dbab4420985">Ranking::buscar_iterador</a></div><div class="ttdeci">bool buscar_iterador(list&lt; Jugador &gt;::iterator it)</div><div class="ttdoc">Retorna si l'iterador it apunta a algun element del rànking del paràmetre implícit.</div></div>
+<div class="ttc" id="aclass_conj___categories_html_a7cebfe4f6e7e47e7dd826aa954606b84"><div class="ttname"><a href="class_conj___categories.html#a7cebfe4f6e7e47e7dd826aa954606b84">Conj_Categories::punts</a></div><div class="ttdeci">vector&lt; int &gt; punts(int c)</div><div class="ttdoc">Retorna els punts per nivell d'una categoria.</div></div>
+<div class="ttc" id="aclass_conjunt___tornejos_html_a60b4b58f208b766f6e1fbe4845f35dba"><div class="ttname"><a href="class_conjunt___tornejos.html#a60b4b58f208b766f6e1fbe4845f35dba">Conjunt_Tornejos::imprimeix_tour</a></div><div class="ttdeci">void imprimeix_tour()</div><div class="ttdoc">Imprimeix per ordre el nom i la categoria de tots els tornejos de la llista de tornejos del paràmetre...</div></div>
+<div class="ttc" id="aclass_ranking_html_a255d86f5886087cc553a090f8beaa9df"><div class="ttname"><a href="class_ranking.html#a255d86f5886087cc553a090f8beaa9df">Ranking::eliminar_torneig</a></div><div class="ttdeci">void eliminar_torneig(const string &amp;t)</div><div class="ttdoc">Elimina el torneig amb nom t de la llista de punts per torneig de tots els elements del rànking del p...</div></div>
+<div class="ttc" id="aclass_conj___categories_html_a72edaa4af121256da492dcb6d9f5b29d"><div class="ttname"><a href="class_conj___categories.html#a72edaa4af121256da492dcb6d9f5b29d">Conj_Categories::imprimeix_categories</a></div><div class="ttdeci">void imprimeix_categories()</div><div class="ttdoc">Imprimeix la informació sobre el paràmetre implícit.</div></div>
+<div class="ttc" id="aclass_conjunt___tornejos_html_a16ea053304ee506432ce087ed5d2d415"><div class="ttname"><a href="class_conjunt___tornejos.html#a16ea053304ee506432ce087ed5d2d415">Conjunt_Tornejos::llistar_tornejos</a></div><div class="ttdeci">list&lt; string &gt; llistar_tornejos()</div><div class="ttdoc">Retorna una llista amb els noms de tots els tornejos de la llista de tornejos del paràmetre implícit.</div></div>
+<div class="ttc" id="aclass_conjunt___tornejos_html_a972753b1b9867b6987db9cfdaad314e3"><div class="ttname"><a href="class_conjunt___tornejos.html#a972753b1b9867b6987db9cfdaad314e3">Conjunt_Tornejos::categoria</a></div><div class="ttdeci">int categoria(const string &amp;t)</div><div class="ttdoc">Retorna la categoria del torneig amb nom t</div></div>
+<div class="ttc" id="aclass_conj___categories_html"><div class="ttname"><a href="class_conj___categories.html">Conj_Categories</a></div><div class="ttdef"><b>Definition:</b> <a href="_conjunt___categories_8hh_source.html#l00010">Conjunt_Categories.hh:10</a></div></div>
+<div class="ttc" id="aclass_ranking_html_a124c5ea84e3702119b743e3accf8d109"><div class="ttname"><a href="class_ranking.html#a124c5ea84e3702119b743e3accf8d109">Ranking::actualitzar_ranking</a></div><div class="ttdeci">void actualitzar_ranking(const vector&lt; int &gt; &amp;punts)</div><div class="ttdoc">Llegeix els resultats d'un torneig i actualitza la puntuació dels jugadors participants.</div></div>
+<div class="ttc" id="aclass_ranking_html_a89629015f9378cd5b251bb620f964e30"><div class="ttname"><a href="class_ranking.html#a89629015f9378cd5b251bb620f964e30">Ranking::baixa_jugador</a></div><div class="ttdeci">void baixa_jugador(list&lt; Jugador &gt;::iterator it)</div><div class="ttdoc">Esborra del rànking i la llista d'iteradors del paràmetre implícit el jugador apuntat per l'iterador ...</div></div>
+<div class="ttc" id="aclass_ranking_html_a7f68c4f16408337d955063e16d4c18f8"><div class="ttname"><a href="class_ranking.html#a7f68c4f16408337d955063e16d4c18f8">Ranking::imprimeix_ranking</a></div><div class="ttdeci">void imprimeix_ranking()</div><div class="ttdoc">Imprimeix per ordre de puntuació la posició en el rànking, el nom i la puntuació de tots els jugadors...</div></div>
+<div class="ttc" id="a_ranking_8hh_html"><div class="ttname"><a href="_ranking_8hh.html">Ranking.hh</a></div></div>
+<div class="ttc" id="aclass_jugador_html"><div class="ttname"><a href="class_jugador.html">Jugador</a></div><div class="ttdef"><b>Definition:</b> <a href="_jugador_8hh_source.html#l00015">Jugador.hh:15</a></div></div>
+<div class="ttc" id="aclass_conjunt___tornejos_html_a1ce15b0b0566220da46c8d25c37815fb"><div class="ttname"><a href="class_conjunt___tornejos.html#a1ce15b0b0566220da46c8d25c37815fb">Conjunt_Tornejos::buscar_iterador</a></div><div class="ttdeci">bool buscar_iterador(list&lt; Torneig &gt;::iterator it)</div><div class="ttdoc">Indica si l'iterador it apunta a algun element de la llista de tornejos del paràmetre implícit.</div></div>
+<div class="ttc" id="aclass_ranking_html_a0e8716827ec6442dadc6d53bb4dc3ab3"><div class="ttname"><a href="class_ranking.html#a0e8716827ec6442dadc6d53bb4dc3ab3">Ranking::alta_jugador</a></div><div class="ttdeci">void alta_jugador(const Jugador &amp;j)</div><div class="ttdoc">Afegeix un jugador al rànking i un iterador a la llista d'iteradors del paràmetre implícit.</div></div>
+<div class="ttc" id="amain_8cc_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="main_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdoc">Programa principal per la pràctica de PRO2 de 2022: Circuito de torneos de tenis</div><div class="ttdef"><b>Definition:</b> <a href="main_8cc_source.html#l00016">main.cc:16</a></div></div>
+<div class="ttc" id="aclass_conjunt___tornejos_html_a4da630471c1c4d27b532686a79114a21"><div class="ttname"><a href="class_conjunt___tornejos.html#a4da630471c1c4d27b532686a79114a21">Conjunt_Tornejos::alta_torneig</a></div><div class="ttdeci">void alta_torneig(const Torneig &amp;tg)</div><div class="ttdoc">Afegeix el torneig tg a la llista de tornejos del paràmetre implícit.</div></div>
+<div class="ttc" id="aclass_ranking_html_aea385ffd5e58d6d1fb0e2f790367b4dd"><div class="ttname"><a href="class_ranking.html#aea385ffd5e58d6d1fb0e2f790367b4dd">Ranking::llista_inscripcions</a></div><div class="ttdeci">list&lt; string &gt; llista_inscripcions(int n)</div><div class="ttdoc">Retorna una llista amb els noms de n jugadors.</div></div>
+<div class="ttc" id="aclass_conjunt___tornejos_html"><div class="ttname"><a href="class_conjunt___tornejos.html">Conjunt_Tornejos</a></div><div class="ttdef"><b>Definition:</b> <a href="_conjunt___tornejos_8hh_source.html#l00011">Conjunt_Tornejos.hh:11</a></div></div>
+<div class="ttc" id="aclass_conjunt___tornejos_html_abc9140532a73a2f1faacffcd3037e0f2"><div class="ttname"><a href="class_conjunt___tornejos.html#abc9140532a73a2f1faacffcd3037e0f2">Conjunt_Tornejos::buscar_torneig</a></div><div class="ttdeci">list&lt; Torneig &gt;::iterator buscar_torneig(const string &amp;t)</div><div class="ttdoc">Retorna la posició on es troba l'element amb nom t</div></div>
+<div class="ttc" id="a_conjunt___tornejos_8hh_html"><div class="ttname"><a href="_conjunt___tornejos_8hh.html">Conjunt_Tornejos.hh</a></div></div>
+<div class="ttc" id="aclass_ranking_html_aa2bfabe4d132f78dc81c5ce67df7f01a"><div class="ttname"><a href="class_ranking.html#aa2bfabe4d132f78dc81c5ce67df7f01a">Ranking::buscar_jugador</a></div><div class="ttdeci">list&lt; Jugador &gt;::iterator buscar_jugador(const string &amp;j)</div><div class="ttdoc">Retorna la posició on es troba el jugador amb nom j al rànking del paràmetre implícit.</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generat per &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

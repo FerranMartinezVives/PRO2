@@ -1,0 +1,27 @@
+\hypertarget{_conjunt___categories_8hh}{}\doxysection{Referència del Fitxer Conjunt\+\_\+\+Categories.\+hh}
+\label{_conjunt___categories_8hh}\index{Conjunt\_Categories.hh@{Conjunt\_Categories.hh}}
+Inclou el graf de dependències per a Conjunt\+\_\+\+Categories.\+hh\+:
+% FIG 0
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_conj___categories}{Conj\+\_\+\+Categories}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Definicions de Tipus}
+\begin{DoxyCompactItemize}
+\item 
+typedef vector$<$ vector$<$ int $>$ $>$ \mbox{\hyperlink{_conjunt___categories_8hh_ab7c37ab727b1a10ad22235f76cfb5ecc}{Matriu}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentació de les Definicions de Tipus}
+\mbox{\Hypertarget{_conjunt___categories_8hh_ab7c37ab727b1a10ad22235f76cfb5ecc}\label{_conjunt___categories_8hh_ab7c37ab727b1a10ad22235f76cfb5ecc}} 
+\index{Conjunt\_Categories.hh@{Conjunt\_Categories.hh}!Matriu@{Matriu}}
+\index{Matriu@{Matriu}!Conjunt\_Categories.hh@{Conjunt\_Categories.hh}}
+\doxysubsubsection{\texorpdfstring{Matriu}{Matriu}}
+{\footnotesize\ttfamily typedef vector$<$ vector$<$int$>$ $>$ \mbox{\hyperlink{_conjunt___categories_8hh_ab7c37ab727b1a10ad22235f76cfb5ecc}{Matriu}}}
+
+
+
+Definició a la línia 8 del fitxer Conjunt\+\_\+\+Categories.\+hh.
+

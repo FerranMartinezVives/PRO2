@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pràctica de PRO2 Primavera 2022. Circuito de torneos de tenis: Fitxer de Codi Partit.cc</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Pràctica de PRO2 Primavera 2022. Circuito de torneos de tenis
+   &#160;<span id="projectnumber">v7.0 13-11-2017</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generat per Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Partit.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_partit_8cc.html">Veure la documentació d'aquest fitxer.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="_partit_8hh.html">Partit.hh</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_partit.html#a80beaa342d3415e7bfc33319dbe302bf">    6</a></span>&#160;<a class="code" href="class_partit.html#a80beaa342d3415e7bfc33319dbe302bf">Partit::Partit</a>() {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  <a class="code" href="class_partit.html#a3d25d4ef01c7047872c33d055b471309">resultats</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;}</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_partit.html#aee6691b56de92ac767b692070bd69523">   10</a></span>&#160;<a class="code" href="class_partit.html#a80beaa342d3415e7bfc33319dbe302bf">Partit::Partit</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; s) {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <a class="code" href="class_partit.html#a3d25d4ef01c7047872c33d055b471309">resultats</a> = s;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keywordflow">if</span> (s.size() == 3) {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_partit.html#a5e0d317c9b8033dd63dca369e8e9c645">p_a</a> = make_pair(s[0] - <span class="charliteral">&#39;0&#39;</span>, s[2] - <span class="charliteral">&#39;0&#39;</span>);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_partit.html#a77f70e22c523792690445a8467213b48">p_b</a> = make_pair(s[2] - <span class="charliteral">&#39;0&#39;</span>, s[0] - <span class="charliteral">&#39;0&#39;</span>);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="class_partit.html#a38df6dac4eaf46e401f6eb82a1eb86e4">s_a</a> = <a class="code" href="class_partit.html#af7aab16150fd3dde261fd0e988d62a11">s_b</a> = <a class="code" href="class_partit.html#a23d650178a77cba286cf6dd2062a350e">j_a</a> = <a class="code" href="class_partit.html#ab17b1ef4e068e8c64fd1026d2f96572a">j_b</a> = make_pair(0, 0);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  }</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_partit.html#a38df6dac4eaf46e401f6eb82a1eb86e4">s_a</a> = <a class="code" href="class_partit.html#af7aab16150fd3dde261fd0e988d62a11">s_b</a> = <a class="code" href="class_partit.html#a23d650178a77cba286cf6dd2062a350e">j_a</a> = <a class="code" href="class_partit.html#ab17b1ef4e068e8c64fd1026d2f96572a">j_b</a> = make_pair(0, 0);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; s.size(); i += 4) {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      <span class="keywordtype">int</span> <a class="code" href="class_partit.html#a62e058b04085e59ae88ef25e420335e6">a</a> = s[i];</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      <span class="keywordtype">int</span> <a class="code" href="class_partit.html#af33dc3dac6db87d5374be25c4919772a">b</a> = s[i + 2];</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="class_partit.html#a62e058b04085e59ae88ef25e420335e6">a</a> &gt; <a class="code" href="class_partit.html#af33dc3dac6db87d5374be25c4919772a">b</a>) {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        ++<a class="code" href="class_partit.html#a38df6dac4eaf46e401f6eb82a1eb86e4">s_a</a>.first;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        ++<a class="code" href="class_partit.html#af7aab16150fd3dde261fd0e988d62a11">s_b</a>.second;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        ++<a class="code" href="class_partit.html#a38df6dac4eaf46e401f6eb82a1eb86e4">s_a</a>.second;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        ++<a class="code" href="class_partit.html#af7aab16150fd3dde261fd0e988d62a11">s_b</a>.first;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      <a class="code" href="class_partit.html#a23d650178a77cba286cf6dd2062a350e">j_a</a>.first += <a class="code" href="class_partit.html#a62e058b04085e59ae88ef25e420335e6">a</a> - <span class="charliteral">&#39;0&#39;</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <a class="code" href="class_partit.html#a23d650178a77cba286cf6dd2062a350e">j_a</a>.second += <a class="code" href="class_partit.html#af33dc3dac6db87d5374be25c4919772a">b</a> - <span class="charliteral">&#39;0&#39;</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <a class="code" href="class_partit.html#ab17b1ef4e068e8c64fd1026d2f96572a">j_b</a>.first += <a class="code" href="class_partit.html#af33dc3dac6db87d5374be25c4919772a">b</a> - <span class="charliteral">&#39;0&#39;</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <a class="code" href="class_partit.html#ab17b1ef4e068e8c64fd1026d2f96572a">j_b</a>.second += <a class="code" href="class_partit.html#a62e058b04085e59ae88ef25e420335e6">a</a> - <span class="charliteral">&#39;0&#39;</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_partit.html#a38df6dac4eaf46e401f6eb82a1eb86e4">s_a</a>.first == 2) {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <a class="code" href="class_partit.html#a5e0d317c9b8033dd63dca369e8e9c645">p_a</a> = make_pair(1, 0);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <a class="code" href="class_partit.html#a77f70e22c523792690445a8467213b48">p_b</a> = make_pair(0, 1);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <a class="code" href="class_partit.html#a5e0d317c9b8033dd63dca369e8e9c645">p_a</a> = make_pair(0, 1);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <a class="code" href="class_partit.html#a77f70e22c523792690445a8467213b48">p_b</a> = make_pair(1, 0);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_partit.html#ac0e1ab579b1ba4cbc274328796fe3f67">   46</a></span>&#160;<a class="code" href="class_partit.html#ac0e1ab579b1ba4cbc274328796fe3f67">Partit::~Partit</a>() {}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_partit.html#a9076cd635c0f8199d855560f92122572">   48</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_partit.html#a9076cd635c0f8199d855560f92122572">Partit::escriure_a</a>(<span class="keywordtype">int</span> x) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="class_partit.html#a62e058b04085e59ae88ef25e420335e6">a</a> = x;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_partit.html#a4042774952fdf21a6aaae486dd7f9570">   52</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_partit.html#a4042774952fdf21a6aaae486dd7f9570">Partit::escriure_b</a>(<span class="keywordtype">int</span> x) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="class_partit.html#af33dc3dac6db87d5374be25c4919772a">b</a> = x;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_partit.html#a7731fc3c7726bbea064e86177c694d6b">   56</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_partit.html#a7731fc3c7726bbea064e86177c694d6b">Partit::upset</a>() {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="class_partit.html#a5e0d317c9b8033dd63dca369e8e9c645">p_a</a>.first &lt; <a class="code" href="class_partit.html#a5e0d317c9b8033dd63dca369e8e9c645">p_a</a>.second;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_partit.html#adea8daef3cf1174c0e824a84b6eb8389">   60</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_partit.html#adea8daef3cf1174c0e824a84b6eb8389">Partit::consultar_guanyador</a>() {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="class_partit.html#a7731fc3c7726bbea064e86177c694d6b">upset</a>()) <span class="keywordflow">return</span> <a class="code" href="class_partit.html#af33dc3dac6db87d5374be25c4919772a">b</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">return</span> <a class="code" href="class_partit.html#a62e058b04085e59ae88ef25e420335e6">a</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_partit.html#ad06770cba0f499d5dd598b6dd1a047b6">   65</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_partit.html#ad06770cba0f499d5dd598b6dd1a047b6">Partit::consultar_perdedor</a>() {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="class_partit.html#a7731fc3c7726bbea064e86177c694d6b">upset</a>()) <span class="keywordflow">return</span> <a class="code" href="class_partit.html#a62e058b04085e59ae88ef25e420335e6">a</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">return</span> <a class="code" href="class_partit.html#af33dc3dac6db87d5374be25c4919772a">b</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_partit.html#a7132df3dd0d6234f08b5bf1255b551cd">   70</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_partit.html#a7132df3dd0d6234f08b5bf1255b551cd">Partit::consultar_a</a>() {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="class_partit.html#a62e058b04085e59ae88ef25e420335e6">a</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="class_partit.html#ac3cf7cc67eefedb85b46e0768b593c0c">   74</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_partit.html#ac3cf7cc67eefedb85b46e0768b593c0c">Partit::consultar_b</a>() {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="class_partit.html#af33dc3dac6db87d5374be25c4919772a">b</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_partit.html#aa07406d615f8d304a4aa4b0fe1a054b5">   78</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="class_partit.html#aa07406d615f8d304a4aa4b0fe1a054b5">Partit::consultar_resultats</a>() {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="class_partit.html#a3d25d4ef01c7047872c33d055b471309">resultats</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="class_partit.html#ad68b13af9d7f165c550cc8b119a74864">   82</a></span>&#160;pair&lt;int, int&gt; <a class="code" href="class_partit.html#ad68b13af9d7f165c550cc8b119a74864">Partit::consultar_partits_a</a>() {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="class_partit.html#a5e0d317c9b8033dd63dca369e8e9c645">p_a</a>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="class_partit.html#adfec3094149e91b2ab64ce03b1284081">   86</a></span>&#160;pair&lt;int, int&gt; <a class="code" href="class_partit.html#adfec3094149e91b2ab64ce03b1284081">Partit::consultar_partits_b</a>() {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="class_partit.html#a77f70e22c523792690445a8467213b48">p_b</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="class_partit.html#a2d6533b71e6a7fd7d20ebece14347f96">   90</a></span>&#160;pair&lt;int, int&gt; <a class="code" href="class_partit.html#a2d6533b71e6a7fd7d20ebece14347f96">Partit::consultar_sets_a</a>() {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="class_partit.html#a38df6dac4eaf46e401f6eb82a1eb86e4">s_a</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="class_partit.html#a2597f4f0d8827e67c18dd258ce5450ec">   94</a></span>&#160;pair&lt;int, int&gt; <a class="code" href="class_partit.html#a2597f4f0d8827e67c18dd258ce5450ec">Partit::consultar_sets_b</a>() {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="class_partit.html#af7aab16150fd3dde261fd0e988d62a11">s_b</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="class_partit.html#a1ead80fd4291342fd34bd960911e0919">   98</a></span>&#160;pair&lt;int, int&gt; <a class="code" href="class_partit.html#a1ead80fd4291342fd34bd960911e0919">Partit::consultar_jocs_a</a>() {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="class_partit.html#a23d650178a77cba286cf6dd2062a350e">j_a</a>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="class_partit.html#a3f0f54c93ff85554e2b92d72135a75bf">  102</a></span>&#160;pair&lt;int, int&gt; <a class="code" href="class_partit.html#a3f0f54c93ff85554e2b92d72135a75bf">Partit::consultar_jocs_b</a>() {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="class_partit.html#ab17b1ef4e068e8c64fd1026d2f96572a">j_b</a>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_partit_html_a7731fc3c7726bbea064e86177c694d6b"><div class="ttname"><a href="class_partit.html#a7731fc3c7726bbea064e86177c694d6b">Partit::upset</a></div><div class="ttdeci">bool upset()</div><div class="ttdoc">Retorna si el jugador b ha guanyat al jugador a</div><div class="ttdef"><b>Definition:</b> <a href="_partit_8cc_source.html#l00056">Partit.cc:56</a></div></div>
+<div class="ttc" id="aclass_partit_html_a1ead80fd4291342fd34bd960911e0919"><div class="ttname"><a href="class_partit.html#a1ead80fd4291342fd34bd960911e0919">Partit::consultar_jocs_a</a></div><div class="ttdeci">pair&lt; int, int &gt; consultar_jocs_a()</div><div class="ttdoc">Retorna els jocs guanyats i perduts del jugador a</div><div class="ttdef"><b>Definition:</b> <a href="_partit_8cc_source.html#l00098">Partit.cc:98</a></div></div>
+<div class="ttc" id="aclass_partit_html_af33dc3dac6db87d5374be25c4919772a"><div class="ttname"><a href="class_partit.html#af33dc3dac6db87d5374be25c4919772a">Partit::b</a></div><div class="ttdeci">int b</div><div class="ttdef"><b>Definition:</b> <a href="_partit_8hh_source.html#l00027">Partit.hh:27</a></div></div>
+<div class="ttc" id="aclass_partit_html_adfec3094149e91b2ab64ce03b1284081"><div class="ttname"><a href="class_partit.html#adfec3094149e91b2ab64ce03b1284081">Partit::consultar_partits_b</a></div><div class="ttdeci">pair&lt; int, int &gt; consultar_partits_b()</div><div class="ttdoc">Retorna els partits guanyats i perduts del jugador b</div><div class="ttdef"><b>Definition:</b> <a href="_partit_8cc_source.html#l00086">Partit.cc:86</a></div></div>
+<div class="ttc" id="aclass_partit_html_ab17b1ef4e068e8c64fd1026d2f96572a"><div class="ttname"><a href="class_partit.html#ab17b1ef4e068e8c64fd1026d2f96572a">Partit::j_b</a></div><div class="ttdeci">pair&lt; int, int &gt; j_b</div><div class="ttdef"><b>Definition:</b> <a href="_partit_8hh_source.html#l00024">Partit.hh:24</a></div></div>
+<div class="ttc" id="aclass_partit_html_af7aab16150fd3dde261fd0e988d62a11"><div class="ttname"><a href="class_partit.html#af7aab16150fd3dde261fd0e988d62a11">Partit::s_b</a></div><div class="ttdeci">pair&lt; int, int &gt; s_b</div><div class="ttdef"><b>Definition:</b> <a href="_partit_8hh_source.html#l00022">Partit.hh:22</a></div></div>
+<div class="ttc" id="aclass_partit_html_a3d25d4ef01c7047872c33d055b471309"><div class="ttname"><a href="class_partit.html#a3d25d4ef01c7047872c33d055b471309">Partit::resultats</a></div><div class="ttdeci">string resultats</div><div class="ttdef"><b>Definition:</b> <a href="_partit_8hh_source.html#l00017">Partit.hh:17</a></div></div>
+<div class="ttc" id="aclass_partit_html_adea8daef3cf1174c0e824a84b6eb8389"><div class="ttname"><a href="class_partit.html#adea8daef3cf1174c0e824a84b6eb8389">Partit::consultar_guanyador</a></div><div class="ttdeci">int consultar_guanyador()</div><div class="ttdoc">Retorna la posició relativa en el rànking del torneig on s'ha disputat el partit del guanyador del pa...</div><div class="ttdef"><b>Definition:</b> <a href="_partit_8cc_source.html#l00060">Partit.cc:60</a></div></div>
+<div class="ttc" id="a_partit_8hh_html"><div class="ttname"><a href="_partit_8hh.html">Partit.hh</a></div><div class="ttdoc">Especificació de la classe Partit.</div></div>
+<div class="ttc" id="aclass_partit_html_a2597f4f0d8827e67c18dd258ce5450ec"><div class="ttname"><a href="class_partit.html#a2597f4f0d8827e67c18dd258ce5450ec">Partit::consultar_sets_b</a></div><div class="ttdeci">pair&lt; int, int &gt; consultar_sets_b()</div><div class="ttdoc">Retorna els sets guanyats i perduts del jugador b</div><div class="ttdef"><b>Definition:</b> <a href="_partit_8cc_source.html#l00094">Partit.cc:94</a></div></div>
+<div class="ttc" id="aclass_partit_html_a23d650178a77cba286cf6dd2062a350e"><div class="ttname"><a href="class_partit.html#a23d650178a77cba286cf6dd2062a350e">Partit::j_a</a></div><div class="ttdeci">pair&lt; int, int &gt; j_a</div><div class="ttdef"><b>Definition:</b> <a href="_partit_8hh_source.html#l00023">Partit.hh:23</a></div></div>
+<div class="ttc" id="aclass_partit_html_a4042774952fdf21a6aaae486dd7f9570"><div class="ttname"><a href="class_partit.html#a4042774952fdf21a6aaae486dd7f9570">Partit::escriure_b</a></div><div class="ttdeci">void escriure_b(int x)</div><div class="ttdoc">Guarda la posició relativa en el rànking del torneig on s'ha disputat el partit del jugador arbitrari...</div><div class="ttdef"><b>Definition:</b> <a href="_partit_8cc_source.html#l00052">Partit.cc:52</a></div></div>
+<div class="ttc" id="aclass_partit_html_a3f0f54c93ff85554e2b92d72135a75bf"><div class="ttname"><a href="class_partit.html#a3f0f54c93ff85554e2b92d72135a75bf">Partit::consultar_jocs_b</a></div><div class="ttdeci">pair&lt; int, int &gt; consultar_jocs_b()</div><div class="ttdoc">Retorna els jocs guanyats i perduts del jugador b</div><div class="ttdef"><b>Definition:</b> <a href="_partit_8cc_source.html#l00102">Partit.cc:102</a></div></div>
+<div class="ttc" id="aclass_partit_html_a2d6533b71e6a7fd7d20ebece14347f96"><div class="ttname"><a href="class_partit.html#a2d6533b71e6a7fd7d20ebece14347f96">Partit::consultar_sets_a</a></div><div class="ttdeci">pair&lt; int, int &gt; consultar_sets_a()</div><div class="ttdoc">Retorna els sets guanyats i perduts del jugador a</div><div class="ttdef"><b>Definition:</b> <a href="_partit_8cc_source.html#l00090">Partit.cc:90</a></div></div>
+<div class="ttc" id="aclass_partit_html_a77f70e22c523792690445a8467213b48"><div class="ttname"><a href="class_partit.html#a77f70e22c523792690445a8467213b48">Partit::p_b</a></div><div class="ttdeci">pair&lt; int, int &gt; p_b</div><div class="ttdef"><b>Definition:</b> <a href="_partit_8hh_source.html#l00020">Partit.hh:20</a></div></div>
+<div class="ttc" id="aclass_partit_html_ac3cf7cc67eefedb85b46e0768b593c0c"><div class="ttname"><a href="class_partit.html#ac3cf7cc67eefedb85b46e0768b593c0c">Partit::consultar_b</a></div><div class="ttdeci">int consultar_b()</div><div class="ttdoc">Retorna la posició relativa en el rànking del torneig on s'ha disputat el partit del jugador b</div><div class="ttdef"><b>Definition:</b> <a href="_partit_8cc_source.html#l00074">Partit.cc:74</a></div></div>
+<div class="ttc" id="aclass_partit_html_a5e0d317c9b8033dd63dca369e8e9c645"><div class="ttname"><a href="class_partit.html#a5e0d317c9b8033dd63dca369e8e9c645">Partit::p_a</a></div><div class="ttdeci">pair&lt; int, int &gt; p_a</div><div class="ttdef"><b>Definition:</b> <a href="_partit_8hh_source.html#l00019">Partit.hh:19</a></div></div>
+<div class="ttc" id="aclass_partit_html_a62e058b04085e59ae88ef25e420335e6"><div class="ttname"><a href="class_partit.html#a62e058b04085e59ae88ef25e420335e6">Partit::a</a></div><div class="ttdeci">int a</div><div class="ttdef"><b>Definition:</b> <a href="_partit_8hh_source.html#l00026">Partit.hh:26</a></div></div>
+<div class="ttc" id="aclass_partit_html_a38df6dac4eaf46e401f6eb82a1eb86e4"><div class="ttname"><a href="class_partit.html#a38df6dac4eaf46e401f6eb82a1eb86e4">Partit::s_a</a></div><div class="ttdeci">pair&lt; int, int &gt; s_a</div><div class="ttdef"><b>Definition:</b> <a href="_partit_8hh_source.html#l00021">Partit.hh:21</a></div></div>
+<div class="ttc" id="aclass_partit_html_aa07406d615f8d304a4aa4b0fe1a054b5"><div class="ttname"><a href="class_partit.html#aa07406d615f8d304a4aa4b0fe1a054b5">Partit::consultar_resultats</a></div><div class="ttdeci">string consultar_resultats()</div><div class="ttdoc">Retorna un string representant el resultat del partit.</div><div class="ttdef"><b>Definition:</b> <a href="_partit_8cc_source.html#l00078">Partit.cc:78</a></div></div>
+<div class="ttc" id="aclass_partit_html_ad06770cba0f499d5dd598b6dd1a047b6"><div class="ttname"><a href="class_partit.html#ad06770cba0f499d5dd598b6dd1a047b6">Partit::consultar_perdedor</a></div><div class="ttdeci">int consultar_perdedor()</div><div class="ttdoc">Retorna la posició relativa en el rànking del torneig on s'ha disputat el partit del perdedor del par...</div><div class="ttdef"><b>Definition:</b> <a href="_partit_8cc_source.html#l00065">Partit.cc:65</a></div></div>
+<div class="ttc" id="aclass_partit_html_a7132df3dd0d6234f08b5bf1255b551cd"><div class="ttname"><a href="class_partit.html#a7132df3dd0d6234f08b5bf1255b551cd">Partit::consultar_a</a></div><div class="ttdeci">int consultar_a()</div><div class="ttdoc">Retorna la posició relativa en el rànking del torneig on s'ha disputat el partit del jugador a</div><div class="ttdef"><b>Definition:</b> <a href="_partit_8cc_source.html#l00070">Partit.cc:70</a></div></div>
+<div class="ttc" id="aclass_partit_html_ac0e1ab579b1ba4cbc274328796fe3f67"><div class="ttname"><a href="class_partit.html#ac0e1ab579b1ba4cbc274328796fe3f67">Partit::~Partit</a></div><div class="ttdeci">~Partit()</div><div class="ttdoc">Destructora per defecte.</div><div class="ttdef"><b>Definition:</b> <a href="_partit_8cc_source.html#l00046">Partit.cc:46</a></div></div>
+<div class="ttc" id="aclass_partit_html_ad68b13af9d7f165c550cc8b119a74864"><div class="ttname"><a href="class_partit.html#ad68b13af9d7f165c550cc8b119a74864">Partit::consultar_partits_a</a></div><div class="ttdeci">pair&lt; int, int &gt; consultar_partits_a()</div><div class="ttdoc">Retorna els partits guanyats i perduts del jugador a</div><div class="ttdef"><b>Definition:</b> <a href="_partit_8cc_source.html#l00082">Partit.cc:82</a></div></div>
+<div class="ttc" id="aclass_partit_html_a80beaa342d3415e7bfc33319dbe302bf"><div class="ttname"><a href="class_partit.html#a80beaa342d3415e7bfc33319dbe302bf">Partit::Partit</a></div><div class="ttdeci">Partit()</div><div class="ttdoc">Constructora per defecte.</div><div class="ttdef"><b>Definition:</b> <a href="_partit_8cc_source.html#l00006">Partit.cc:6</a></div></div>
+<div class="ttc" id="aclass_partit_html_a9076cd635c0f8199d855560f92122572"><div class="ttname"><a href="class_partit.html#a9076cd635c0f8199d855560f92122572">Partit::escriure_a</a></div><div class="ttdeci">void escriure_a(int x)</div><div class="ttdoc">Guarda la posició relativa en el rànking del torneig on s'ha disputat el partit del jugador arbitrari...</div><div class="ttdef"><b>Definition:</b> <a href="_partit_8cc_source.html#l00048">Partit.cc:48</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generat per &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>
